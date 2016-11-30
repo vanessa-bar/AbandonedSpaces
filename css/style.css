@@ -1,0 +1,457 @@
+@font-face {
+	font-family: "OratorSTD";
+	src: url("../fonts/OratorStd.otf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway-Light.ttf");
+	font-weight: 200;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url("../img/bg.png");
+	font-family: "Raleway";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	transition: .5s;
+}
+
+h1 {
+	font-family: "OratorSTD";
+	font-size: 24px;
+	margin: 15px 0;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	background: none;
+	border: none;
+}
+
+/* MENU - NAVIGATION */
+nav {
+	padding: 5px 0;
+	background: white;
+}
+
+.navbar {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin: auto;
+}
+
+nav li {
+	font-family: "OratorSTD";
+	text-align: center;
+	font-size: 16px;
+	flex: 1;
+}
+
+.navbar .active a {
+	color: #229b74;
+}
+
+.navbar a:hover {
+	color: #b3b3b3;
+	transition: .5s;
+}
+
+.nature-footer {
+	background-image: url("../img/montagne_footer.png");
+	background-size: contain;
+	background-position: center center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.nature-header {
+	background : url("../img/nature-header.jpeg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.urbain-footer {
+	background-image: url("../img"); /*TODO*/
+	background-size: contain;
+	background-position: center center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.urbain-header {
+	background : url("../img/urbain-header.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.ruines-footer {
+	background-image: url("../img"); /*TODO*/
+	background-size: contain;
+	background-position: center center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.ruines-header {
+	background : url("../img/ruines-header.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.carte-footer {
+	background-image: url("../img"); /*TODO*/
+	background-size: contain;
+	background-position: center center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.carte-header {
+	background : url("../img/carte-header.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.apropos-footer {
+	background-image: url("../img"); /*TODO*/
+	background-size: contain;
+	background-position: center center;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.apropos-header {
+	background : url("../img/apropos-header.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 350px;
+	display: flex;
+	justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+
+.header-info {
+	margin: auto;
+	width: 20%;
+	background: rgba(255,255,255,0.5);
+	padding: 20px 0;
+}
+
+.header-title {
+	margin: 0;
+	padding: 0;	
+}
+
+.header-subtitle {
+	color: #b3b3b3;
+}
+
+.search-link {
+	flex: 0.5;
+}
+
+.nav-icon {
+	height: 20px;
+	width: auto;
+}
+
+.nav-subtitle {
+	font-family: "Raleway";
+	font-size: 14px;
+	color: #b3b3b3;
+}
+
+.mobile-nav {
+	display: none;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+}
+
+.article-items-container {
+	width: 90%;
+	margin: auto;
+}
+
+.all-hashtags {
+	text-align: center;
+}
+
+.hashtag, .hashtag-selected {
+	display: inline-block;
+	margin: 10px 15px;
+	padding: 5px;
+	font-family: "OratorSTD";
+	font-size: 16px;
+	cursor: pointer;
+	color: white;
+}
+
+.hashtag {
+	background: #c6c6c6;
+	transition: .3s;
+}
+
+.hashtag:hover {
+	background: #b3b3b3;
+	transition: .3s;
+}
+
+.hashtag-selected {
+	background: #229b74;
+
+}
+
+.hashtag > a {
+	color: white;
+}
+
+/* ARTICLE */
+.grid-sizer {
+	width: 50%;
+}
+
+.grid-item {
+	width: 45%;
+	margin: 2.5%;
+}
+
+.article-item {
+	background: white;
+	position: relative;
+	padding-bottom: 55px;
+}
+
+.article-item-img {
+	width:100%;
+	padding: 0;
+}
+
+.article-item-description {
+	padding: 10px;
+	text-align: center;
+}
+
+.article-item-info {
+	text-align: right;
+	font-size: 14px;
+}
+
+.article-item-title, .article-item-hashtag {
+	font-family: "OratorSTD";
+}
+
+.article-item-title {
+	padding: 15px 35px;
+	font-size: 16px;
+}
+
+.article-item-hashtag {
+	font-size: 14px;
+	color: #b3b3b3;
+}
+
+.article-item-link {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.article-item-btn {
+	width: auto;
+	height: 38px;
+
+}
+
+.article-container, .about-container {
+	width: calc(80% - 100px);
+	margin: 35px auto;
+	padding: 30px 50px;
+	background: white;
+}
+
+.about-container h1 {
+	text-align: center;
+}
+
+.indented-line {
+	margin-left: 40px;
+}
+
+.align-center {
+	text-align: center;
+	width: 100%;
+}
+
+.difficulty-icon {
+	height: 26px;
+	width: auto;
+	padding: 0 2px;
+}
+
+.article-title {
+	text-align: center;
+	padding: 30px 50px;
+}
+
+.article-content::first-letter, .about-content::first-letter {
+	font-family: "Raleway";
+	font-size: 25px;
+	color: #229b74;
+}
+
+.article-info {
+	text-align: right;
+}
+
+.article-img {
+	padding: 10px 0;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media (max-width: 1280px) {
+	.natureHeader {
+		height: 250px;
+	}
+
+	.container {
+		width: 85%;
+		margin: auto;
+	}
+
+	.article-container, .about-container {
+		width: calc(95% - 70px);
+		margin: 35px auto;
+		padding: 30px 35px;
+		background: white;
+	}
+
+	.article-item-container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.natureHeader {
+		height: 200px;
+	}
+
+	.mobile-nav {
+		display: initial;
+		float: right;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+
+	.grid-sizer {
+		width: 100%;
+	}
+
+	.grid-item {
+		width: 95%;
+		margin: 2.5%;
+	}
+
+	.article-item-container {
+		width: 100%;
+	}
+
+	.article-container, .about-container {
+		width: calc(95% - 70px);
+		margin: 20px auto;
+		padding: 30px 35px;
+		background: white;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navbar {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
+
+	nav li {
+		font-family: "OratorSTD";
+		text-align: center;
+		font-size: 16px;
+		flex: 1;
+		padding: 10px 0;
+	}
+
+	.search-link {
+		flex: 1;
+	}
+}
