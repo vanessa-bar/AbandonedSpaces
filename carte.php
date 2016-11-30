@@ -95,6 +95,26 @@
 
       map.setOptions({styles: styles});
     }
+
+    $( document ).ready(function() {
+      $.ajax({
+                // chargement du fichier externe monfichier-ajax.php 
+                url      : "include/getLocations.php",
+                // Passage des données au fichier externe (ici le nom cliqué)  
+                //data     : {NomEleve: $(this).html()},
+                cache    : false,
+                dataType : "json",
+                error    : function(request, error) { // Info Debuggage si erreur         
+                             alert("Erreur : responseText: "+ error);
+                           },
+                success  : function(data) {  
+                             // Informe l'utilisateur que l'opération est terminé et renvoie le résultat
+                             alert(data.coucou);  
+                             // J'écris le résultat prénom de l'élève dans le h1
+                             //$(#prenom_eleve).html(data.PrenomEleve);
+                           }       
+           });     
+      });
     </script>
     
   </body>
