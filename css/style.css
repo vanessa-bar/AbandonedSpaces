@@ -215,7 +215,7 @@ nav li {
 
 .container {
 	width: 60%;
-	margin: auto;
+	margin: 30px auto;
 }
 
 .article-items-container {
@@ -316,7 +316,7 @@ nav li {
 
 .article-container, .about-container {
 	width: calc(80% - 100px);
-	margin: 35px auto;
+	margin: auto;
 	padding: 30px 50px;
 	background: white;
 }
@@ -363,6 +363,17 @@ nav li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.search-form {
+	display: flex;
+	width: 100%;
+	flex-direction:row;
+	justify-content: space-between;
+}
+
+.search-form-item {
+	flex:1;
 }
 
 @media (max-width: 1280px) {
