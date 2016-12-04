@@ -76,8 +76,7 @@
 									</button>
 									<input type="hidden" name="theme" value="2">
 								</form>
-									
-								</a>
+								
 							</div>
 						</div>
 					<?php

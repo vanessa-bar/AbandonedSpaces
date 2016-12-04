@@ -61,6 +61,30 @@
     });
     </script>
     <script>
+      $("#geo").click(function() {
+        if (navigator.geolocation)
+          var watchId = navigator.geolocation.watchPosition(successCallback,
+                                    null,
+                                    {enableHighAccuracy:true});
+        else
+          alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
+      });
+
+      function successCallback(position) {
+          map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+
+          var content = "Vous êtes ici !";
+          var infowindow = new google.maps.InfoWindow({
+            content: content
+          });      
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            map: map
+          });
+          prev_infowindow = infowindow;
+          infowindow.open(map, marker);
+      }
+
       function filter() {
         var oneChecked = false;
 
@@ -85,6 +109,7 @@
           nocontinent = true;
         }
 
+        // 4. Mettre le marqueur à null
         m1.setMap(null);
         m2.setMap(null);
         m3.setMap(null);
@@ -98,7 +123,9 @@
             m3.setMap(map);
             m4.setMap(map);
             m5.setMap(map);
+            // 5. Ajouter marqueur à carte
           } else {
+            // 6. Ajouter le marqueur en fonction du theme
             if (type1) {
               m1.setMap(map);
               m5.setMap(map);
@@ -112,6 +139,7 @@
             }
           }
         } else {
+
           if (continent1) {
             if (notype) {
               m5.setMap(map);
@@ -212,6 +240,7 @@
       }
 
      var map;
+     // 1- Déclarer le marqueur
      var m1, m2, m3, m4, m5;
      var prev_infowindow = false; 
      
@@ -349,12 +378,32 @@
         infowindow5.open(map, m5);
       });
 
+      /// 2. Remplir le template
+      /*contentString = "<a href='article.php?article-id=5&theme=1'>Du Cruzco au Machu Picchu : une traversée Inca</a>";
+      var infowindow5 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m5 = new google.maps.Marker({
+        position: new google.maps.LatLng(-13.1631, -72.5450)
+      });
+
+      m5.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow5;
+        infowindow5.open(map, m5);
+      });*/
+
       m1.setMap(map);
       m2.setMap(map);
       m3.setMap(map);
       m4.setMap(map);
       m5.setMap(map);
       m6.setMap(map);
+      // 3. Ajouter le marqueur à la map
     }
     </script>
     <script async defer

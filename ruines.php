@@ -75,7 +75,6 @@
 									<input type="hidden" name="theme" value="1">
 								</form>
 									
-								</a>
 							</div>
 						</div>
 					<?php

@@ -1,5 +1,5 @@
 <?php
-	/*$host = "sqletud.u-pem.fr";
+	/*$host = "sqletud.univ-mlv.fr";
 	$dbname = "vbar_db";
 	$charset = "UTF8";
 	$username = "vbar";

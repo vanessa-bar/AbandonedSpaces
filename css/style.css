@@ -4,7 +4,7 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+ 
 @font-face {
 	font-family: "Raleway";
 	src: url("../fonts/Raleway-Light.ttf");
@@ -87,11 +87,7 @@ nav li {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
-	display: flex;
-	justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    text-align: center;
+	position: relative;
 }
 
 .urbain-footer {
@@ -108,11 +104,7 @@ nav li {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
-	display: flex;
-	justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    text-align: center;
+	position: relative;
 }
 
 .ruines-footer {
@@ -123,17 +115,24 @@ nav li {
 	margin-top: 100px;
 }
 
+.imgHeader {
+	height: 25%;
+	width: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
 .ruines-header {
 	background : url("../img/ruines-header.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
-	display: flex;
-	justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    text-align: center;
+	position: relative;
 }
 
 .carte-footer {
@@ -150,11 +149,7 @@ nav li {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
-	display: flex;
-	justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    text-align: center;
+	position: relative;
 }
 
 .apropos-footer {
@@ -171,28 +166,9 @@ nav li {
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
-	display: flex;
-	justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    text-align: center;
+	position: relative;
 }
 
-.header-info {
-	margin: auto;
-	width: 20%;
-	background: rgba(255,255,255,0.5);
-	padding: 20px 0;
-}
-
-.header-title {
-	margin: 0;
-	padding: 0;	
-}
-
-.header-subtitle {
-	color: #b3b3b3;
-}
 
 .search-link {
 	flex: 0.5;

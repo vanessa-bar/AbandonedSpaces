@@ -76,7 +76,6 @@
 									<input type="hidden" name="theme" value="3">
 								</form>
 									
-								</a>
 							</div>
 						</div>
 					<?php
@@ -144,5 +143,4 @@
 		});
 		</script>
 	</body>
-
 </html>
