@@ -86,9 +86,11 @@
 			</div>
 		</div>
 
-		<?php
-			include("include/natureFooter.php");
-		?>
+		<div class="footer">
+			<p>Plan du Site - Mentions Légales
+			<br/>
+			IMAC2 - 2016</p>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>

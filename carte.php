@@ -50,7 +50,10 @@
       <div id="map"></div>
     </div>
 
-    <div class="carte-footer">
+    <div class="footer">
+      <p>Plan du Site - Mentions Légales
+      <br/>
+      IMAC2 - 2016</p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -63,7 +66,7 @@
     <script>
       $("#geo").click(function() {
         if (navigator.geolocation)
-          var watchId = navigator.geolocation.watchPosition(successCallback,
+          var watchId = navigator.geolocation.getCurrentPosition(successCallback,
                                     null,
                                     {enableHighAccuracy:true});
         else
@@ -73,16 +76,28 @@
       function successCallback(position) {
           map.panTo(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
 
+          var image = 'img/mapPosIcon.png';
+
           var content = "Vous êtes ici !";
           var infowindow = new google.maps.InfoWindow({
             content: content
           });      
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-            map: map
+            map: map,
+            icon: image
           });
           prev_infowindow = infowindow;
           infowindow.open(map, marker);
+
+          marker.addListener('click', function() {
+            if(prev_infowindow) {
+               prev_infowindow.close();
+            }
+
+            prev_infowindow = infowindow;
+            infowindow.open(map, marker);
+          });
       }
 
       function filter() {
@@ -279,6 +294,8 @@
       map.setOptions({styles: styles});
 
       // Creation des marqueurs
+      var image = 'img/mapIcon.png';
+
       ////////////////////////////
       var contentString = "<a href='article.php?article-id=1&theme=1'>Là où les passés s’entremêlent et le présent s’en mèle, Babylone</a>";
       var infowindow1 = new google.maps.InfoWindow({
@@ -286,7 +303,8 @@
       });      
 
       m1 = new google.maps.Marker({
-        position: new google.maps.LatLng(3.8796, 49.8945)
+        position: new google.maps.LatLng(3.8796, 49.8945),
+        icon: image
       });
 
       m1.addListener('click', function() {
@@ -306,7 +324,8 @@
       });      
 
       m2 = new google.maps.Marker({
-        position: new google.maps.LatLng(78.6546, 16.3448)
+        position: new google.maps.LatLng(78.6546, 16.3448),
+        icon: image
       });
 
       m2.addListener('click', function() {
@@ -326,7 +345,8 @@
       });      
 
       m3 = new google.maps.Marker({
-        position: new google.maps.LatLng(26.7112, 13.3365)
+        position: new google.maps.LatLng(26.7112, 13.3365),
+        icon: image
       });
 
       m3.addListener('click', function() {
@@ -346,7 +366,8 @@
       });      
 
       m4 = new google.maps.Marker({
-        position: new google.maps.LatLng(34.6996, 135.8205)
+        position: new google.maps.LatLng(34.6996, 135.8205),
+        icon: image
       });
 
       m4.addListener('click', function() {
@@ -366,7 +387,8 @@
       });      
 
       m5 = new google.maps.Marker({
-        position: new google.maps.LatLng(-13.1631, -72.5450)
+        position: new google.maps.LatLng(-13.1631, -72.5450),
+        icon: image
       });
 
       m5.addListener('click', function() {
@@ -385,7 +407,8 @@
       });      
 
       m5 = new google.maps.Marker({
-        position: new google.maps.LatLng(-13.1631, -72.5450)
+        position: new google.maps.LatLng(-13.1631, -72.5450),
+        icon: image
       });
 
       m5.addListener('click', function() {

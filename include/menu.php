@@ -3,6 +3,7 @@
 	<div class="clearfix"></div>
 	<div class="hidden">
 		<ul class="navbar">
+			<li><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
 			<li><a href="ruines.php">Passé Suspendu</br>
 					<span class="nav-subtitle">- vestiges -</span></a>
 			</li>
@@ -17,4 +18,5 @@
 			<li class="search-link"><a href="#"><img class="nav-icon" src="img/search_ideogram.png" alt="Recherche"/></a></li>
 		</ul>
 	</div>
+	<img src="img/menuLine.png" style="position:absolute;bottom:0;">
 </nav>

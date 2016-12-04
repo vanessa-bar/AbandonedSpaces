@@ -43,10 +43,17 @@ button {
 	border: none;
 }
 
+.footer {
+	background: white;
+	padding: 25px 0;
+	text-align: center;
+}
+
 /* MENU - NAVIGATION */
 nav {
-	padding: 5px 0;
+	padding: 10px 0;
 	background: white;
+	position: relative;
 }
 
 .navbar {
@@ -71,6 +78,11 @@ nav li {
 .navbar a:hover {
 	color: #b3b3b3;
 	transition: .5s;
+}
+
+.nav-menuIcon {
+	height: 45px;
+	width: auto;
 }
 
 .nature-footer {
