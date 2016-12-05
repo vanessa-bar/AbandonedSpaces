@@ -204,15 +204,11 @@
 			?>
 		</div>
 
-		<?php
-			if ($_GET['theme'] == 1) {
-				include("include/ruineFooter.php");
-			} else if ($_GET['theme'] == 2) {
-				include("include/natureFooter.php");
-			} else {
-				include("include/urbainFooter.php");
-			}
-		?>
+		<div class="footer">
+			<p>Plan du Site - Mentions Légales
+			<br/>
+			IMAC2 - 2016</p>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
