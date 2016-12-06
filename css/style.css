@@ -12,6 +12,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -34,6 +42,13 @@ h1 {
 	margin: 15px 0;
 }
 
+h2 {
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+}
+
 img {
 	width: 100%;
 }
@@ -41,6 +56,18 @@ img {
 button {
 	background: none;
 	border: none;
+}
+
+p {
+	line-height: 24px;
+}
+
+.space {
+	height: 50px;
+}
+
+.clearfix {
+	clear: both;
 }
 
 .footer {

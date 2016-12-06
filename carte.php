@@ -96,7 +96,7 @@
             }
 
             prev_infowindow = infowindow;
-            infowindow.open(map, marker);
+            infowindow.open(map, marker);
           });
       }
 

@@ -204,6 +204,7 @@
 			?>
 		</div>
 
+		<div class="clearfix"></div>
 		<div class="footer">
 			<p>Plan du Site - Mentions Légales
 			<br/>

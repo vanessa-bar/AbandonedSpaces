@@ -36,69 +36,99 @@
 						<span class="indented-line">- la nature et son lien avec le temps</span><br/>
 						<span class="indented-line">- la nature et elle-même, seule et unique</span><br/>
 					Ces catégories sont poreuses et nous vous incitons et fortement à explorer chacune d’elles !<br/>
-
-
 				</p>
 
 				<h1>Qui sommes-nous ?</h1>
-				<h2>Vanessa Bar</h2>
+				
+				<div class="about-content">
+					<div class="row">
+						<div >
+							<img class="profil-img" src="img/about.JPG" alt="Vanessa Bar">
+						</div>
+						<div>
+							<h2>Vanessa Bar</h2>
+							<br/>
+							<p>Vanessa au bout du monde. De l’Asie à la Turquie pour elle il n’y a qu’un pas. Partant à la 
+							découverte des cultures et du patrimoine, temples et coutumes qu’elle photographie avec délicatesse. 
+							Elle emporte avec elle et fait voyager les souvenirs laissés par les rencontres, qui font de fait le 
+							tour du monde avec elle.</p>
 
-					<p class="about-content">
-						<img class="profil-img" src="img/image.JPG" alt="Vanessa Bar">
-
-						Vanessa au bout du monde. De l’Asie à la Turquie pour elle il n’y a qu’un pas. Partant à la découverte des cultures et du patrimoine, temples et coutumes qu’elle photographie avec délicatesse. Elle emporte avec elle et fait voyager les souvenirs laissés par les rencontres, qui font de fait le tour du monde avec elle.<br/>
-
-						<br/>
-						Et ses compétences ?<br/>
-						   	<span class="indented-line">Une virée informatique, qui structure les pensées</span><br/>
-						    <span class="indented-line">Un soupçon d’harmonie, qui enjolive le quotidien</span><br/>
-						    <span class="indented-line">Et une pincée de bonne humeur, qui couronne le tout</span><br/>
-
-						<br/>
-						<span class="hashtag">#rencontres</span> 
-						<span class="hashtag">#souvenirs</span>
-						<span class="hashtag">#photos</span>
+							<div style="text-align: center">	
+								<span class="hashtag">#rencontres</span> 
+								<span class="hashtag">#souvenirs</span>
+								<span class="hashtag">#photos</span>
+							</div>
+						</div>
+					</div>
+						
+					<p>Et ses compétences ?<br/>
+					   	<span class="indented-line">Une virée informatique, qui structure les pensées</span><br/>
+					    <span class="indented-line">Un soupçon d’harmonie, qui enjolive le quotidien</span><br/>
+					    <span class="indented-line">Et une pincée de bonne humeur, qui couronne le tout</span><br/>
 					</p>
 
-				<h2>Julie Puech</h2>
+					<div class="space"></div>
 
-					<p class="about-content">
-						Julie, l’avez vous vu ? On cherche activement un sac à dos sur pattes ! À peine revenue de randonnée, ce sac est déjà reparti, difficile à suivre ! Vous pouvez lui parler d’exploration, de lieux déserts et isolés, de bâtiments et de villes vides... Mais surtout ne vous avisez pas de lui parler des relations humaines qu’elle a tissé au cours de ses voyages !! <br/>
+					<div class="row">
+						<div>
+							<h2>Julie Puech</h2>
+							<br/>
+							<p>Julie, l’avez vous vu ? On cherche activement un sac à dos sur pattes ! À peine revenue de randonnée,
+							 ce sac est déjà reparti, difficile à suivre ! Vous pouvez lui parler d’exploration, de lieux déserts et
+							  isolés, de bâtiments et de villes vides... Mais surtout ne vous avisez pas de lui parler des relations
+							   humaines qu’elle a tissé au cours de ses voyages !! <br/>
+							</p>
 
-						<br/>
-						Et ses compétences ?<br/>
-							<span class="indented-line">Un passage par la prépa, qui forge le caractère</span><br/>
-							<span class="indented-line">Un zeste de créativité, qui s’entretient en dessinant</span><br/>
-							<span class="indented-line">Et un brin de géométrie, qui couronne le tout</span><br/>
-
-						<br/>
-						<span class="hashtag">#sacàdos</span> 
-						<span class="hashtag">#jeparsàlaventure</span>  
-						<span class="hashtag">#toutseul</span>
+							<div style="text-align: center">	
+								<span class="hashtag">#sacàdos</span> 
+								<span class="hashtag">#jeparsàlaventure</span>  
+								<span class="hashtag">#toutseul</span>
+							</div>
+						</div>
+						<div >
+							<img class="profil-img" src="img/about2.JPG" alt="Vanessa Bar">
+						</div>
+					</div>
+						
+					<p>Et ses compétences ?<br/>
+						<span class="indented-line">Un passage par la prépa, qui forge le caractère</span><br/>
+						<span class="indented-line">Un zeste de créativité, qui s’entretient en dessinant</span><br/>
+						<span class="indented-line">Et un brin de géométrie, qui couronne le tout</span><br/>
 					</p>
 
-				<h2>Elise Ritoux</h2>
+					<div class="space"></div>
 
-					<p class="about-content">
-						Elise. Toujours en sac à dos, parfois à l'hôtel, d’autres fois à l’auberge de jeunesse, souvent chez l’habitant, et le reste du temps sous sa tente. À la découverte des cultures et des trésors de la nature, Elise part tantôt dans la nature, tantôt dans les villes.<br/>
+					<div class="row">
+						<div >
+							<img class="profil-img" src="img/about3.JPG" alt="Vanessa Bar">
+						</div>
+						<div>
+							<h2>Elise Ritoux</h2>
+							<br/>
+							<p>Elise. Toujours en sac à dos, parfois à l'hôtel, d’autres fois à l’auberge de jeunesse, souvent chez
+							 l’habitant, et le reste du temps sous sa tente. À la découverte des cultures et des trésors de la nature,
+							  Elise part tantôt dans la nature, tantôt dans les villes.<br/>
+							<br/>
+							</p>
 
-						<br/>
-						Et ses compétences ?<br/>
-						    <span class="indented-line">Une balade audiovisuelle, qui préserve les rêves</span><br/>
-						    <span class="indented-line">Une sensation colorée, qui pimente les moeurs</span><br/>
-						    <span class="indented-line">Et une pointe d'insouciance, qui couronne le tout</span><br/>
-
-						<br/>
-						<span class="hashtag">#rencontres</span> 
-						<span class="hashtag">#sacàdos</span> 
-						<span class="hashtag">#toutseul</span> 
-
+							<div style="text-align: center">	
+								<span class="hashtag">#rencontres</span> 
+								<span class="hashtag">#sacàdos</span> 
+								<span class="hashtag">#toutseul</span>
+							</div>
+						</div>
+					</div>
+						
+					<p>Et ses compétences ?<br/>
+					    <span class="indented-line">Une balade audiovisuelle, qui préserve les rêves</span><br/>
+					    <span class="indented-line">Une sensation colorée, qui pimente les moeurs</span><br/>
+					    <span class="indented-line">Et une pointe d'insouciance, qui couronne le tout</span><br/>
 					</p>
-
+				</div>
 			</div>
-			
 		</div>
 
+		<div class="clearfix"></div>
 		<div class="footer">
 			<p>Plan du Site - Mentions Légales
 			<br/>
