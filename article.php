@@ -110,7 +110,7 @@
 
 						<div class="article-item-description">
 							<p class="article-item-info">Par Test le 30 Nov. 2016</p>
-							<p class="article-item-title">Nara Dreamland, exploration au pays des rêves abandonnés</p>
+							<p class="article-item-title">Nara Dreamland, exploration des rêves abandonnés</p>
 							<p class="article-item-hashtag">
 								
 							</p>

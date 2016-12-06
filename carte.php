@@ -256,7 +256,7 @@
 
      var map;
      // 1- Déclarer le marqueur
-     var m1, m2, m3, m4, m5;
+     var m1, m2, m3, m4, m5, m6, m7;
      var prev_infowindow = false; 
      
      function initialize() {
@@ -360,7 +360,7 @@
 
 
       ////////////////////////////
-      contentString = "<a href='article.php?article-id=4&theme=3'>Nara Dreamland, exploration au pays des rêves abandonnés</a>";
+      contentString = "<a href='article.php?article-id=4&theme=3'>Nara Dreamland, exploration des rêves abandonnés</a>";
       var infowindow4 = new google.maps.InfoWindow({
         content: contentString
       });      
@@ -399,6 +399,49 @@
         prev_infowindow = infowindow5;
         infowindow5.open(map, m5);
       });
+
+
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=6&theme=1'>L’Écosse et ses châteaux, forteresses de l’Histoire</a>";
+      var infowindow6 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m6 = new google.maps.Marker({
+        position: new google.maps.LatLng(56.4037154,-5.0274038)
+      });
+
+      m6.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow6;
+        infowindow6.open(map, m6);
+      });
+
+
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=7&theme=2'>Terre de Feu et bout du monde : la Patagonie intacte</a>";
+      var infowindow7 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m7 = new google.maps.Marker({
+        position: new google.maps.LatLng(-54.8019121, -68.3029511)
+      });
+
+      m7.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow7;
+        infowindow7.open(map, m7);
+      });
+
 
       /// 2. Remplir le template
       /*contentString = "<a href='article.php?article-id=5&theme=1'>Du Cruzco au Machu Picchu : une traversée Inca</a>";
