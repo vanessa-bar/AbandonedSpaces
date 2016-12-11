@@ -22,6 +22,12 @@ function selectArticleById($article_id, $bdd) {
 	return $response;
 }
 
+function selectArticleByKeyword($keyword, $bdd) {
+	$req = 'SELECT * FROM article WHERE titre LIKE "%'.$keyword.'%" OR contenu LIKE "%'.$keyword.'%"';
+	$response = $bdd->query($req);
+	return $response;
+}
+
 // Retourne tous les hashtags d'un article
 function getArticleHashtags($id_article, $bdd) {
 	$req = 'SELECT hashtag.id_hash, hashtag.nom FROM hashtag 

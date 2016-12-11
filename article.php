@@ -10,6 +10,7 @@
 		<meta charset="UTF-8"/>	
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 	</head>
 
 	<body>
@@ -32,7 +33,15 @@
 				$response->closeCursor(); 
 			?>
 				<div class="article-container">
-					<a href="nature.php">Retour</a>
+			<?php
+				if ($_GET['theme'] == 1) {
+					echo '<a href="ruines.php">Retour</a>';
+				} else if ($_GET['theme'] == 2) {
+					echo '<a href="nature.php">Retour</a>';
+				} else {
+					echo '<a href="urbain.php">Retour</a>';
+				}
+			?>
 
 				<?php
 					echo '<h1 class="article-title">'.$donnees['titre'].'</h1>';
@@ -40,10 +49,23 @@
 					echo '<p>Difficulté : ';
 					$diff = $donnees['difficulte'];
 					for ($i = 0; $i < $diff; $i++) {
-						echo '<img class="difficulty-icon" src="img/difficulty.png" alt="diff">';
+						if ($_GET['theme'] == 1) {
+							echo '<img class="difficulty-icon" src="img/RISQUE_VESTIGES.png" alt="diff">';
+						} else if ($_GET['theme'] == 2) {
+							echo '<img class="difficulty-icon" src="img/RISQUE_NATURE.png" alt="diff">';
+						} else {
+							echo '<img class="difficulty-icon" src="img/RISQUE_URBAIN.png" alt="diff">';
+						}
+						
 					}
 					for ($i; $i < 3; $i++) {
-						echo '<img class="difficulty-icon" src="img/difficultyNone.png" alt="diffNone">';
+						if ($_GET['theme'] == 1) {
+							echo '<img class="difficulty-icon" src="img/RISQUE_VESTIGES_GRIS.png" alt="diff">';
+						} else if ($_GET['theme'] == 2) {
+							echo '<img class="difficulty-icon" src="img/RISQUE_NATURE_GRIS.png" alt="diff">';
+						} else {
+							echo '<img class="difficulty-icon" src="img/RISQUE_URBAIN_GRIS.png" alt="diff">';
+						}
 					}
 					echo '</p>';
 					echo '<img class="article-img" src='.$donnees['image'].' alt="article-img" />';
@@ -205,10 +227,13 @@
 		</div>
 
 		<div class="clearfix"></div>
+
 		<div class="footer">
-			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
+			<img src="img/footer_urbain.png"><div class="footer-infos">
+				<p>Plan du Site - Mentions Légales
+				<br/>
+				IMAC2 - 2016</p>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

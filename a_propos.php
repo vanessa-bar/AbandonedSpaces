@@ -60,12 +60,6 @@
 							</div>
 						</div>
 					</div>
-						
-					<p>Et ses compétences ?<br/>
-					   	<span class="indented-line">Une virée informatique, qui structure les pensées</span><br/>
-					    <span class="indented-line">Un soupçon d’harmonie, qui enjolive le quotidien</span><br/>
-					    <span class="indented-line">Et une pincée de bonne humeur, qui couronne le tout</span><br/>
-					</p>
 
 					<div class="space"></div>
 
@@ -89,12 +83,6 @@
 							<img class="profil-img" src="img/about2.JPG" alt="Vanessa Bar">
 						</div>
 					</div>
-						
-					<p>Et ses compétences ?<br/>
-						<span class="indented-line">Un passage par la prépa, qui forge le caractère</span><br/>
-						<span class="indented-line">Un zeste de créativité, qui s’entretient en dessinant</span><br/>
-						<span class="indented-line">Et un brin de géométrie, qui couronne le tout</span><br/>
-					</p>
 
 					<div class="space"></div>
 
@@ -118,12 +106,6 @@
 							</div>
 						</div>
 					</div>
-						
-					<p>Et ses compétences ?<br/>
-					    <span class="indented-line">Une balade audiovisuelle, qui préserve les rêves</span><br/>
-					    <span class="indented-line">Une sensation colorée, qui pimente les moeurs</span><br/>
-					    <span class="indented-line">Et une pointe d'insouciance, qui couronne le tout</span><br/>
-					</p>
 				</div>
 			</div>
 		</div>

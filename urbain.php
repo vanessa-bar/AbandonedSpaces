@@ -85,10 +85,13 @@
 			</div>
 		</div>
 
+		<div class="clearfix"></div>
 		<div class="footer">
-			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
+			<img src="img/footer_urbain.png"><div class="footer-infos">
+				<p>Plan du Site - Mentions Légales
+				<br/>
+				IMAC2 - 2016</p>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
