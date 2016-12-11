@@ -481,3 +481,12 @@ nav li {
 		flex: 1;
 	}
 }
+
+
+.imgArticle {
+	width: 75%;
+	height: auto;
+	text-align: center;
+	margin : 5% 12.5%;
+}
+
