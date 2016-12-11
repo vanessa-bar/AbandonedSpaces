@@ -67,7 +67,7 @@
 						while ($donnees = $reponse->fetch()) {
 							
 					?>
-
+						<a href=<?php echo '"article.php?article-id='.$donnees['id_article'].'&theme=1"'; ?>>
 						<div class=
 							<?php
 								echo '"grid-item article-item';
@@ -97,13 +97,9 @@
 									?>
 								</p>
 
-								<form method="GET" action="article.php"> 
-									<button class="article-item-link" name="article-id" value=<?php echo '"'.$donnees['id_article'].'"'; ?> type="submit">
-										<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
-									</button>
-									<input type="hidden" name="theme" value="1">
-								</form>
-									
+								<button class="article-item-link">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
 							</div>
 						</div>
 					<?php
@@ -111,6 +107,7 @@
 						$reponse->closeCursor();
 					?>
 			</div>
+		</a>
 		</div>
 
 		<div class="clearfix"></div>
@@ -170,7 +167,7 @@
 			});
 
 			  // combine inclusive filters
-			  var filterValue = inclusives.length ? inclusives.join(', ') : '*';
+			  var filterValue = inclusives.length ? inclusives.join('') : '*';
 
 			  grid.isotope({ filter: filterValue });
 		});

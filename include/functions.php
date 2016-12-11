@@ -28,7 +28,7 @@ function selectArticleByHashtag($hashtag, $bdd) {
 				ON article_has_hashtag.id_article = article.id_article 
 			INNER JOIN hashtag
 		        ON article_has_hashtag.id_hash = hashtag.id_hash 
-			WHERE hashtag.nom = '.$hastag;
+			WHERE hashtag.nom = "'.$hashtag.'"';
 	$response = $bdd->query($req);
 	return $response;
 }
@@ -62,7 +62,7 @@ function selectAllHashtagsArticleByHashtag($hashtag, $bdd) {
 							ON article_has_hashtag.id_article = article.id_article 
 						INNER JOIN hashtag
 					        ON article_has_hashtag.id_hash = hashtag.id_hash 
-						WHERE hashtag.nom = '.$hashtag.'
+						WHERE hashtag.nom = "'.$hashtag.'"
 				)';
 	$response = $bdd->query($req);
 	return $response;
