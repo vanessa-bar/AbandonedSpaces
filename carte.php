@@ -51,32 +51,72 @@
     </nav>
 
     <div class="container">
-      <h1>Les différents lieux</h1>
+      <h1>Les différents lieux<br/>
+        <img class="img-soulign" src="img/soulignement.png"></h1>
 
 
-        <div class="search-form">
-          <div class="search-form-div">
-            <input type="button" id="geo" value="Me géolocaliser">
+        <div class="search-form" style="text-align:center">
+          <div style="margin-right:100px" class="search-form-div control-group">
+            <input class="map-button" type="button" id="geo" value="Me géolocaliser">
           </div>
 
-          <div class="search-form-div">
-            <h2>Type :</h2>
-            <input type="checkbox" class="tcheck" id="type1" value="1" onclick="filter()"> <label for="type1">Vestiges</label><br/>
-            <input type="checkbox" class="tcheck" id="type2" value="2" onclick="filter()"> <label for="type2">Lieux Reculés</label><br/>
-            <input type="checkbox" class="tcheck" id="type3" value="3" onclick="filter()"> <label for="type3">Urbains</label><br/>
+          <div style="margin-right:100px" class="search-form-div control-group">
+            <p>Type</p>
+            <label class="control control--checkbox">
+              <input class="tcheck" id="type1" value="1" onclick="filter()" type="checkbox" checked="checked"/> Vestiges
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="tcheck" id="type2" value="2" onclick="filter()" type="checkbox" checked="checked"/> Lieux Reculés
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="tcheck" id="type3" value="3" onclick="filter()" type="checkbox" checked="checked"/> Urbains
+              <div class="control__indicator"></div>
+            </label>
           </div>
 
-          <div class="search-form-div">
-            <h2>Continent :</h2>
-            <input type="checkbox" class="ccheck" id="continent1" value="AmeriqueSud" onclick="filter()"> <label for="continent1">Amérique du Sud</label><br/>
-            <input type="checkbox" class="ccheck" id="continent2" value="AmeriqueNord" onclick="filter()"> <label for="continent2">Amérique du Nord</label><br/>
-            <input type="checkbox" class="ccheck" id="continent3" value="Asie" onclick="filter()"> <label for="continent3">Asie</label><br/>
-            <input type="checkbox" class="ccheck" id="continent4" value="Europe" onclick="filter()"> <label for="continent4">Europe</label><br/>
-            <input type="checkbox" class="ccheck" id="continent5" value="Afrique" onclick="filter()"> <label for="continent5">Afrique</label><br/>
-            <input type="checkbox" class="ccheck" id="continent6" value="Oceanie" onclick="filter()"> <label for="continent6">Océanie</label><br/>
+          <div class="search-form-div control-group">
+            <p>Continent</p>
+
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent1" value="AmeriqueSud" onclick="filter()" type="checkbox" checked="checked"/> Amérique du Sud
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent2" value="AmeriqueNord" onclick="filter()" type="checkbox" checked="checked"/> Amérique du Nord
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent3" value="Asie" onclick="filter()" type="checkbox" checked="checked"/> Asie
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+
+          <div class="search-form-div control-group">
+            <p style="color:rgba(0,0,0,0); cursor:default;">.</p>
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent4" value="Europe" onclick="filter()" type="checkbox" checked="checked"/> Europe
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent5" value="Afrique" onclick="filter()" type="checkbox" checked="checked"/> Afrique
+              <div class="control__indicator"></div>
+            </label>
+
+            <label class="control control--checkbox">
+              <input class="ccheck" id="continent6" value="Oceanie" onclick="filter()" type="checkbox" checked="checked"/> Océanie
+              <div class="control__indicator"></div>
+            </label>
           </div>
         </div>
-      <div id="map"></div>
+      <div style="margin-top: 30px" id="map"></div>
     </div>
 
     <div class="clearfix"></div>

@@ -47,7 +47,8 @@
 		</nav>
 
 		<div class="container">
-			<h1>Tous les articles</h1>
+			<h1>Tous les articles<br/>
+				<img class="img-soulign" src="img/soulignement.png"></h1>
 
 
 			<div class="all-hashtags button-group filter-button-group">

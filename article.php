@@ -1,4 +1,10 @@
 <?php
+
+	if (empty($_GET["article-id"]) || empty($_GET["theme"]))
+		header('Location: index.html');
+	if ($_GET["article-id"] > 13)
+		header('Location: index.html');
+
 	include('include/init.php');
 	include('include/functions.php');	
 ?>
@@ -61,11 +67,11 @@
 				<div class="article-container">
 			<?php
 				if ($_GET['theme'] == 1) {
-					echo '<a href="ruines.php">Retour</a>';
+					echo '<a href="ruines.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				} else if ($_GET['theme'] == 2) {
-					echo '<a href="nature.php">Retour</a>';
+					echo '<a href="nature.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				} else {
-					echo '<a href="urbain.php">Retour</a>';
+					echo '<a href="urbain.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				}
 			?>
 
@@ -122,7 +128,9 @@
 					</div>
 			</div>
 
-			<h1>Articles similaires</h1>
+			<h1>Articles similaires<br/>
+			<img class="img-soulign" src="img/soulignement.png"></h1>
+			
 
 			<?php
 				if ($_GET['article-id'] == 1) {

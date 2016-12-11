@@ -47,7 +47,8 @@
 		</nav>
 
 		<div class="container">
-			<h1>Résultats de recherche</h1>
+			<h1>Résultats de recherche<br/>
+				<img class="img-soulign" src="img/soulignement.png"></h1>
 			<?php 
 				if (!empty($_POST["hashtag"])) {
 					$search = 1;
