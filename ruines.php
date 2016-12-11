@@ -9,13 +9,42 @@
 		<title>Passé suspendu</title>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 	</head>
 
 	<body>
 		<?php
 			include("include/ruineHeader.php");
-			include("include/menu.php");
 		?>
+
+		<nav>
+			<button class="mobile-nav">Menu</button>
+			<div class="clearfix"></div>
+			<div class="hidden">
+				<ul class="navbar">
+					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+							<span class="nav-subtitle">- vestiges -</span></a>
+					</li>
+					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+						<span class="nav-subtitle">- urbains -</span></a>
+					</li>
+					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+						<span class="nav-subtitle">- lieux reculés -</span></a>
+					</li>
+					<li class="search-hide"><a href="carte.php">Carte</a></li>
+					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li class="search-link">
+						<form method="POST" action="resultats.php">
+							<input type="text" name="keyword" value="">
+							<input type="submit" class="submit-search-btn" value="">
+						</form>
+					</li>
+				</ul>
+			</div>
+			<img src="img/menuLine.png" style="position:absolute;bottom:0;">
+		</nav>
 
 		<div class="container">
 			<h1>Tous les articles</h1>
@@ -84,10 +113,13 @@
 			</div>
 		</div>
 
+		<div class="clearfix"></div>
 		<div class="footer">
-			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
+			<img src="img/footer_vestige.png"><div class="footer-infos">
+				<p>Plan du Site - Mentions Légales
+				<br/>
+				IMAC2 - 2016</p>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

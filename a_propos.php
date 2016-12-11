@@ -9,13 +9,42 @@
 		<title>A propos</title>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 	</head>
 
 	<body>
 		<?php
 			include("include/aProposHeader.php");
-			include("include/menu.php");
 		?>
+
+		<nav>
+			<button class="mobile-nav">Menu</button>
+			<div class="clearfix"></div>
+			<div class="hidden">
+				<ul class="navbar">
+					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+							<span class="nav-subtitle">- vestiges -</span></a>
+					</li>
+					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+						<span class="nav-subtitle">- urbains -</span></a>
+					</li>
+					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+						<span class="nav-subtitle">- lieux reculés -</span></a>
+					</li>
+					<li class="search-hide"><a href="carte.php">Carte</a></li>
+					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li class="search-link">
+						<form method="POST" action="resultats.php">
+							<input type="text" name="keyword" value="">
+							<input type="submit" class="submit-search-btn" value="">
+						</form>
+					</li>
+				</ul>
+			</div>
+			<img src="img/menuLine.png" style="position:absolute;bottom:0;">
+		</nav>
 
 		<div class="container">
 			<div class="about-container">
@@ -42,10 +71,10 @@
 				
 				<div class="about-content">
 					<div class="row">
-						<div >
-							<img class="profil-img" src="img/about.JPG" alt="Vanessa Bar">
+						<div class="flex-1 img-container">
+							<img class="profil-img" src="img/vanessa.png" alt="Vanessa Bar">
 						</div>
-						<div>
+						<div class="flex-2">
 							<h2>Vanessa Bar</h2>
 							<br/>
 							<p>Vanessa au bout du monde. De l’Asie à la Turquie pour elle il n’y a qu’un pas. Partant à la 
@@ -60,49 +89,11 @@
 							</div>
 						</div>
 					</div>
-						
-					<p>Et ses compétences ?<br/>
-					   	<span class="indented-line">Une virée informatique, qui structure les pensées</span><br/>
-					    <span class="indented-line">Un soupçon d’harmonie, qui enjolive le quotidien</span><br/>
-					    <span class="indented-line">Et une pincée de bonne humeur, qui couronne le tout</span><br/>
-					</p>
 
 					<div class="space"></div>
 
 					<div class="row">
-						<div>
-							<h2>Julie Puech</h2>
-							<br/>
-							<p>Julie, l’avez vous vu ? On cherche activement un sac à dos sur pattes ! À peine revenue de randonnée,
-							 ce sac est déjà reparti, difficile à suivre ! Vous pouvez lui parler d’exploration, de lieux déserts et
-							  isolés, de bâtiments et de villes vides... Mais surtout ne vous avisez pas de lui parler des relations
-							   humaines qu’elle a tissé au cours de ses voyages !! <br/>
-							</p>
-
-							<div style="text-align: center">	
-								<span class="hashtag">#sacàdos</span> 
-								<span class="hashtag">#jeparsàlaventure</span>  
-								<span class="hashtag">#toutseul</span>
-							</div>
-						</div>
-						<div >
-							<img class="profil-img" src="img/about2.JPG" alt="Vanessa Bar">
-						</div>
-					</div>
-						
-					<p>Et ses compétences ?<br/>
-						<span class="indented-line">Un passage par la prépa, qui forge le caractère</span><br/>
-						<span class="indented-line">Un zeste de créativité, qui s’entretient en dessinant</span><br/>
-						<span class="indented-line">Et un brin de géométrie, qui couronne le tout</span><br/>
-					</p>
-
-					<div class="space"></div>
-
-					<div class="row">
-						<div >
-							<img class="profil-img" src="img/about3.JPG" alt="Vanessa Bar">
-						</div>
-						<div>
+						<div class="flex-2">
 							<h2>Elise Ritoux</h2>
 							<br/>
 							<p>Elise. Toujours en sac à dos, parfois à l'hôtel, d’autres fois à l’auberge de jeunesse, souvent chez
@@ -117,13 +108,34 @@
 								<span class="hashtag">#toutseul</span>
 							</div>
 						</div>
+						<div class="flex-1 img-container">
+							<img class="profil-img" src="img/elise.png" alt="Elise Ritoux">
+						</div>
 					</div>
+
+					<div class="space"></div>
+
+					<div class="row">
+						<div class="flex-1 img-container">
+							<img class="profil-img" src="img/julie.png" alt="Julie Puech">
+						</div>
+						<div class="flex-2">
+							<h2>Julie Puech</h2>
+							<br/>
+							<p>Julie, l’avez vous vu ? On cherche activement un sac à dos sur pattes ! À peine revenue de randonnée,
+							 ce sac est déjà reparti, difficile à suivre ! Vous pouvez lui parler d’exploration, de lieux déserts et
+							  isolés, de bâtiments et de villes vides... Mais surtout ne vous avisez pas de lui parler des relations
+							   humaines qu’elle a tissé au cours de ses voyages !! <br/>
+							</p>
+
+							<div style="text-align: center">	
+								<span class="hashtag">#sacàdos</span> 
+								<span class="hashtag">#jeparsàlaventure</span>  
+								<span class="hashtag">#toutseul</span>
+							</div>
+						</div>
 						
-					<p>Et ses compétences ?<br/>
-					    <span class="indented-line">Une balade audiovisuelle, qui préserve les rêves</span><br/>
-					    <span class="indented-line">Une sensation colorée, qui pimente les moeurs</span><br/>
-					    <span class="indented-line">Et une pointe d'insouciance, qui couronne le tout</span><br/>
-					</p>
+					</div>
 				</div>
 			</div>
 		</div>
