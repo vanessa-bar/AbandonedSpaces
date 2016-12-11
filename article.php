@@ -98,24 +98,28 @@
 					echo '<p class="article-info">Par '.$donnees['auteur'].', le ';
 					echo formateDate($donnees['date']);
 					echo '</p>';
-					echo '<p>'.$donnees['continent'].' '.$donnees['climat'].'</p>';
-
-					$response_hashtags = getArticleHashtags($_GET['article-id'], $bdd);	
-					
-					while ($donnees_hashtags = $response_hashtags->fetch()) {
-						echo "<button data-filter='.".$donnees_hashtags['nom']."' class='hashtag'>#".$donnees_hashtags['nom']."</button>";
-					}
-					$response_hashtags->closeCursor();
 					echo '<p class="article-content">'.$donnees['contenu'].'</p>';
+
 				?>
+					<div class="article-complementary-info">
+					<?php
+						$response_hashtags = getArticleHashtags($_GET['article-id'], $bdd);	
+						echo "<form action='resultats.php' method='POST'>";
+						while ($donnees_hashtags = $response_hashtags->fetch()) {
+							echo "<input type='submit' name='hashtag' value=".$donnees_hashtags['nom']." data-filter='."
+							.$donnees_hashtags['nom']."' class='hashtag'>";
+						}
+						echo '</form>';
+						$response_hashtags->closeCursor();
+					?>
 
-				<div id="map-article">
-				</div>
+						<div id="map-article">
+						</div>
 
-				<form action="carte.php">
-					<input type="submit" value="Voir la carte complète">
-				</form>
-
+						<form class="map-form" action="carte.php">
+							<input class="map-button" type="submit" value="Voir la carte complète">
+						</form>
+					</div>
 			</div>
 
 			<h1>Articles similaires</h1>
@@ -273,7 +277,7 @@
 			if ($_GET['theme'] == 1) {
 				echo '<img src="img/footer_vestige.png"><div class="footer-infos">';
 			} else if ($_GET['theme'] == 2) {
-				echo '<img src="img/footer.png"><div class="footer-infos">';
+				echo '<img src="img/footer_nature.png"><div class="footer-infos">';
 			} else {
 				echo '<img src="img/footer_urbain.png"><div class="footer-infos">';
 			}

@@ -84,7 +84,7 @@ button {
 }
 
 p {
-	line-height: 24px;
+	line-height: 26px;
 }
 
 .space {
@@ -148,16 +148,8 @@ nav li {
 	width: auto;
 }
 
-.nature-footer {
-	background-image: url("../img/montagne_footer.png"); 
-	background-size: contain;
-	background-position: center center;
-	height: 200px;
-	margin-top: 100px;
-}
-
 .result-header {
-	background : url(); /* TODO */
+	background : url("../img/recherche_header.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -166,20 +158,12 @@ nav li {
 }
 
 .nature-header {
-	background : url("../img/nature-header.jpeg");
+	background : url("../img/nature_header.JPG");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 350px;
 	position: relative;
-}
-
-.urbain-footer {
-	background-image: url("../img"); /*TODO*/
-	background-size: contain;
-	background-position: center center;
-	height: 200px;
-	margin-top: 100px;
 }
 
 .urbain-header {
@@ -189,14 +173,6 @@ nav li {
 	background-repeat: no-repeat;
 	height: 350px;
 	position: relative;
-}
-
-.ruines-footer {
-	background-image: url("../img"); /*TODO*/
-	background-size: contain;
-	background-position: center center;
-	height: 200px;
-	margin-top: 100px;
 }
 
 .imgHeader {
@@ -219,13 +195,6 @@ nav li {
 	position: relative;
 }
 
-.carte-footer {
-	background-image: url("../img"); /*TODO*/
-	background-size: contain;
-	background-position: center center;
-	height: 200px;
-	margin-top: 100px;
-}
 
 .carte-header {
 	background : url("../img/carte-header.jpg");
@@ -234,14 +203,6 @@ nav li {
 	background-repeat: no-repeat;
 	height: 350px;
 	position: relative;
-}
-
-.apropos-footer {
-	background-image: url("../img"); /*TODO*/
-	background-size: contain;
-	background-position: center center;
-	height: 200px;
-	margin-top: 100px;
 }
 
 .apropos-header {
@@ -406,19 +367,50 @@ nav li {
 }
 
 .article-content::first-letter, .about-content::first-letter {
-	font-size:3.5em;
-	padding-right: 7px;
+	font-size:4.2em;
+	padding-right: 0px;
 	margin-left: -5px;
 	float:left;
 	color: #229b74;
+	font-family: "OratorSTD";
 }
 
 .article-info {
 	text-align: right;
+	font-size: 13px;
 }
 
 .article-img {
 	padding: 10px 0 0 0;
+}
+
+.article-container input {
+	border:none;
+}
+
+.article-complementary-info {
+	margin-top: 75px;
+	text-align: center;
+}
+
+.map-form {
+	text-align: right;
+}
+
+.map-button {
+	margin: 15px 0;
+	line-height: 30px;
+	padding: 5px;
+	font-size: 14px;
+	color: white;
+	background: #229b74;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.map-button:hover {
+	background-color: #52cea6;
+	transition: 1s;
 }
 
 .row {

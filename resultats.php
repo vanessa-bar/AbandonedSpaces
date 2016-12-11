@@ -66,8 +66,8 @@
 
 			<div class="all-hashtags button-group filter-button-group">
 				<?php
-					//if ($search == "byhashtag") 
-
+					if ($search == 1) 
+						$reponse = selectAllHashtagsArticleByHashtag($_POST["hashtag"], $bdd);
 					if ($search == 2)
 						$reponse = selectAllHashtagsArticleByKeyword($_POST["keyword"], $bdd);
 
@@ -82,7 +82,7 @@
 			  		<?php
 			  			$hasResult = false;
 			  			if ($search == 1) 
-			  				$response = selectArticleByHashtag($_POST["hashtag"], $bdd);
+			  				$reponse = selectArticleByHashtag($_POST["hashtag"], $bdd);
 						if ($search == 2)
 							$reponse = selectArticleByKeyword($_POST["keyword"], $bdd);
 
@@ -147,9 +147,11 @@
 
 		<div class="clearfix"></div>
 		<div class="footer">
-			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
+			<img src="img/footer_recherche.png"><div class="footer-infos">
+				<p>Plan du Site - Mentions Légales
+				<br/>
+				IMAC2 - 2016</p>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -200,7 +202,7 @@
 			});
 
 			  // combine inclusive filters
-			  var filterValue = inclusives.length ? inclusives.join(', ') : '*';
+			  var filterValue = inclusives.length ? inclusives.join('') : '*';
 
 			  grid.isotope({ filter: filterValue });
 		});

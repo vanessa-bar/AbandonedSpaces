@@ -115,7 +115,7 @@
 
 		<div class="clearfix"></div>
 		<div class="footer">
-			<img src="img/footer.png"><div class="footer-infos">
+			<img src="img/footer_nature.png"><div class="footer-infos">
 			<p>Plan du Site - Mentions Légales
 				<br/>
 				IMAC2 - 2016</p>
@@ -170,7 +170,7 @@
 			});
 
 			  // combine inclusive filters
-			  var filterValue = inclusives.length ? inclusives.join(', ') : '*';
+			  var filterValue = inclusives.length ? inclusives.join('') : '*';
 
 			  grid.isotope({ filter: filterValue });
 		});
