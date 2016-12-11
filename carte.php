@@ -9,6 +9,8 @@
     <title>Carte</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
      <style type="text/css">
       #map { height: 400px; }
       
@@ -18,8 +20,35 @@
   <body>
     <?php
       include("include/carteHeader.php");
-      include("include/menu.php");
     ?>
+
+    <nav>
+      <button class="mobile-nav">Menu</button>
+      <div class="clearfix"></div>
+      <div class="hidden">
+        <ul class="navbar">
+          <li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+          <li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+              <span class="nav-subtitle">- vestiges -</span></a>
+          </li>
+          <li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+            <span class="nav-subtitle">- urbains -</span></a>
+          </li>
+          <li class="search-hide"><a href="nature.php">Nature Immuable</br>
+            <span class="nav-subtitle">- lieux reculés -</span></a>
+          </li>
+          <li class="search-hide"><a href="carte.php">Carte</a></li>
+          <li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+          <li class="search-link">
+            <form method="POST" action="resultats.php">
+              <input type="text" name="keyword" value="">
+              <input type="submit" class="submit-search-btn" value="">
+            </form>
+          </li>
+        </ul>
+      </div>
+      <img src="img/menuLine.png" style="position:absolute;bottom:0;">
+    </nav>
 
     <div class="container">
       <h1>Les différents lieux</h1>
@@ -97,7 +126,7 @@
             }
 
             prev_infowindow = infowindow;
-            infowindow.open(map, marker);
+            infowindow.open(map, marker);
           });
       }
 
@@ -131,6 +160,12 @@
         m3.setMap(null);
         m4.setMap(null);
         m5.setMap(null);
+        m6.setMap(null);
+        m7.setMap(null);
+        m8.setMap(null);
+        m9.setMap(null);
+        m10.setMap(null);
+        m11.setMap(null);
 
         if (nocontinent) {
           if (notype) {
@@ -139,32 +174,47 @@
             m3.setMap(map);
             m4.setMap(map);
             m5.setMap(map);
+            m6.setMap(map);
+            m7.setMap(map);
+            m8.setMap(map);
+            m9.setMap(map);
+            m10.setMap(map);
+            m11.setMap(map);
             // 5. Ajouter marqueur à carte
           } else {
             // 6. Ajouter le marqueur en fonction du theme
             if (type1) {
               m1.setMap(map);
               m5.setMap(map);
+              m6.setMap(map);
+              m9.setMap(map);
             }
             if (type2) {
               m3.setMap(map);
+              m7.setMap(map);
+              m11.setMap(map);
             }
             if (type3) {
               m2.setMap(map);
               m4.setMap(map);
+              m8.setMap(map);
+              m10.setMap(map);
             }
           }
         } else {
 
-          if (continent1) {
+          if (continent1) { // Amérique Sud
             if (notype) {
               m5.setMap(map);
+              m7.setMap(map);
+              m11.setMap(map);
             } else {
               if (type1) {
                 m5.setMap(map);
               }
               if (type2) {
-
+                m7.setMap(map);
+                m11.setMap(map);
               }
               if (type3) {
 
@@ -172,7 +222,7 @@
             }
           }
 
-          if (continent2) {
+          if (continent2) { // Amérique Nord
             if (notype) {
               
             } else {
@@ -188,9 +238,10 @@
             }
           }
 
-          if (continent3) {
+          if (continent3) { // Asie
             if (notype) {
               m4.setMap(map);
+              m8.setMap(map);
             } else {
               if (type1) { 
                 
@@ -200,13 +251,15 @@
               }
               if (type3) {
                 m4.setMap(map);
+                m8.setMap(map);
               }
             }
           }
 
-          if (continent4) {
+          if (continent4) { // Europe
             if (notype) {
               m2.setMap(map);
+              m10.setMap(map);
             } else {
               if (type1) {
                 
@@ -216,17 +269,20 @@
               }
               if (type3) {
                 m2.setMap(map);
+                m10.setMap(map);
               }
             }
           }
 
-          if (continent5) {
+          if (continent5) { // Afrique
             if (notype) {
               m1.setMap(map);
               m3.setMap(map);
+              m9.setMap(map);
             } else {
               if (type1) {
                 m1.setMap(map);
+                m9.setMap(map);
               }
               if (type2) {
                 m3.setMap(map);
@@ -237,7 +293,7 @@
             }
           }
 
-          if (continent6) {
+          if (continent6) { // Océanie
             if (notype) {
               
             } else {
@@ -257,7 +313,7 @@
 
      var map;
      // 1- Déclarer le marqueur
-     var m1, m2, m3, m4, m5, m6, m7;
+     var m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11;
      var prev_infowindow = false; 
      
      function initialize() {
@@ -410,7 +466,8 @@
       });      
 
       m6 = new google.maps.Marker({
-        position: new google.maps.LatLng(56.4037154,-5.0274038)
+        position: new google.maps.LatLng(56.4037154,-5.0274038),
+        icon: image
       });
 
       m6.addListener('click', function() {
@@ -431,7 +488,8 @@
       });      
 
       m7 = new google.maps.Marker({
-        position: new google.maps.LatLng(-54.8019121, -68.3029511)
+        position: new google.maps.LatLng(-54.8019121, -68.3029511),
+        icon: image
       });
 
       m7.addListener('click', function() {
@@ -443,6 +501,88 @@
         infowindow7.open(map, m7);
       });
 
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=8&theme=3'>Ambiance apocalyptique à Hashima</a>";
+      var infowindow8 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m8 = new google.maps.Marker({
+        position: new google.maps.LatLng(32.6278, 129.7386),
+        icon: image
+      });
+
+      m8.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow8;
+        infowindow8.open(map, m8);
+      });
+
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=9&theme=1'>Le Grand Zimbabwe et ses pierres, reflet d’un empire déchu</a>";
+      var infowindow9 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m9 = new google.maps.Marker({
+        position: new google.maps.LatLng(-20.2675, 30.9316),
+        icon: image
+      });
+
+      m9.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow9;
+        infowindow9.open(map, m9);
+      });
+
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=10&theme=3'>Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</a>";
+      var infowindow10 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m10 = new google.maps.Marker({
+        position: new google.maps.LatLng(51.4045, 30.0542),
+        icon: image
+      });
+
+      m10.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow10;
+        infowindow10.open(map, m10);
+      });
+
+      //////////////////////////
+      contentString = "<a href='article.php?article-id=11&theme=2'>Entre lamas et couleurs, à la découverte des Rainbow Mountains</a>";
+      var infowindow11 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m11 = new google.maps.Marker({
+        position: new google.maps.LatLng(-13.7985, -71.2924),
+        icon: image
+      });
+
+      m11.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow11;
+        infowindow11.open(map, m11);
+      });
 
       /// 2. Remplir le template
       /*contentString = "<a href='article.php?article-id=5&theme=1'>Du Cruzco au Machu Picchu : une traversée Inca</a>";
@@ -470,6 +610,11 @@
       m4.setMap(map);
       m5.setMap(map);
       m6.setMap(map);
+      m7.setMap(map);
+      m8.setMap(map);
+      m9.setMap(map);
+      m10.setMap(map);
+      m11.setMap(map);
       // 3. Ajouter le marqueur à la map
     }
     </script>

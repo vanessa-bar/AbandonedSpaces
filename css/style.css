@@ -36,6 +36,22 @@ a {
 	transition: .5s;
 }
 
+#map-article {
+	height: 300px;
+	margin-top: 15px;
+}
+
+.center-div {
+	text-align: center;
+	width:100%;
+}
+
+.imgArticle {
+	width: 60%;
+	padding: 20px 0;
+	height: auto;
+}
+
 h1 {
 	font-family: "OratorSTD";
 	font-size: 24px;
@@ -322,7 +338,7 @@ nav li {
 }
 
 .article-item-description {
-	padding: 10px;
+	padding: 0 10px 10px 10px;
 	text-align: center;
 }
 
@@ -379,9 +395,9 @@ nav li {
 }
 
 .difficulty-icon {
-	height: 26px;
+	height: 40px;
 	width: auto;
-	padding: 0 2px;
+	padding: 0 7px;
 }
 
 .article-title {
@@ -390,8 +406,10 @@ nav li {
 }
 
 .article-content::first-letter, .about-content::first-letter {
-	font-family: "Raleway";
-	font-size: 25px;
+	font-size:3.5em;
+	padding-right: 7px;
+	margin-left: -5px;
+	float:left;
 	color: #229b74;
 }
 
@@ -400,13 +418,43 @@ nav li {
 }
 
 .article-img {
-	padding: 10px 0;
+	padding: 10px 0 0 0;
 }
 
 .row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.flex-2 {
+	flex:2;
+}
+
+.flex-1 {
+	flex:1;
+}
+
+.profil-img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.img-container {
+  text-align:center; /* Align center inline elements */
+  font: 0/0 a;       /* Hide the characters like spaces */
+}
+
+.img-container:before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.about-content .flex-2 {
+	padding: 0 5px;
 }
 
 .search-form {

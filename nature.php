@@ -10,13 +10,41 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 	</head>
 
 	<body>
 		<?php
 			include("include/natureHeader.php");
-			include("include/menu.php");
 		?>
+
+		<nav>
+			<button class="mobile-nav">Menu</button>
+			<div class="clearfix"></div>
+			<div class="hidden">
+				<ul class="navbar">
+					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+							<span class="nav-subtitle">- vestiges -</span></a>
+					</li>
+					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+						<span class="nav-subtitle">- urbains -</span></a>
+					</li>
+					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+						<span class="nav-subtitle">- lieux reculés -</span></a>
+					</li>
+					<li class="search-hide"><a href="carte.php">Carte</a></li>
+					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li class="search-link">
+						<form method="POST" action="resultats.php">
+							<input type="text" name="keyword" value="">
+							<input type="submit" class="submit-search-btn" value="">
+						</form>
+					</li>
+				</ul>
+			</div>
+			<img src="img/menuLine.png" style="position:absolute;bottom:0;">
+		</nav>
 
 		<div class="container">
 			<h1>Tous les articles</h1>
@@ -35,12 +63,14 @@
 			<div class="grid">
 			  <!-- width of .grid-sizer used for columnWidth -->
 			  <div class="grid-sizer"></div>
+			  		
 			  		<?php
 						$reponse = selectArticleByTheme("Lieux Reculés", $bdd);
 						while ($donnees = $reponse->fetch()) {
 							
 					?>
 
+						<a href=<?php echo '"article.php?article-id='.$donnees['id_article'].'&theme=2"'; ?>>
 						<div class=
 							<?php
 								echo '"grid-item article-item';
@@ -70,13 +100,9 @@
 									?>
 								</p>
 
-								<form method="GET" action="article.php"> 
-									<button class="article-item-link" name="article-id" value=<?php echo '"'.$donnees['id_article'].'"'; ?> type="submit">
-										<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
-									</button>
-									<input type="hidden" name="theme" value="2">
-								</form>
-								
+								<button class="article-item-link">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
 							</div>
 						</div>
 					<?php
@@ -84,13 +110,16 @@
 						$reponse->closeCursor();
 					?>
 			</div>
+		</a>
 		</div>
 
 		<div class="clearfix"></div>
 		<div class="footer">
+			<img src="img/footer.png"><div class="footer-infos">
 			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
+				<br/>
+				IMAC2 - 2016</p>
+			</div>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

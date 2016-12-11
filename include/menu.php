@@ -15,16 +15,6 @@
 			</li>
 			<li class="search-hide"><a href="carte.php">Carte</a></li>
 			<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
-			<!--<li class="search-link">
-				<form class="search-form-menu" method="POST" action="resultats.php"> 
-					<a class="quitSearch" onclick="quitSearch()">X</a>
-					<input type="text" name="keyword" value="">
-					<input type="submit" class="submit-search-btn" value="">
-				</form>
-
-				
-				<img class="nav-icon search-hide" onclick="search()" src="img/search_ideogram.png" alt="Recherche"/></li>-->
-
 			<li class="search-link">
 				<form method="POST" action="resultats.php">
 					<input type="text" name="keyword" value="">

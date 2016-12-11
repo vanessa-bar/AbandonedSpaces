@@ -22,8 +22,48 @@ function selectArticleById($article_id, $bdd) {
 	return $response;
 }
 
+function selectArticleByHashtag($hashtag, $bdd) {
+	$req = 'SELECT * FROM article
+			INNER JOIN article_has_hashtag 
+				ON article_has_hashtag.id_article = article.id_article 
+			INNER JOIN hashtag
+		        ON article_has_hashtag.id_hash = hashtag.id_hash 
+			WHERE hashtag.nom = '.$hastag;
+	$response = $bdd->query($req);
+	return $response;
+}
+
 function selectArticleByKeyword($keyword, $bdd) {
 	$req = 'SELECT * FROM article WHERE titre LIKE "%'.$keyword.'%" OR contenu LIKE "%'.$keyword.'%"';
+	$response = $bdd->query($req);
+	return $response;
+}
+
+function selectAllHashtagsArticleByKeyword($keyword, $bdd) {
+	$req = 'SELECT * FROM hashtag 
+			INNER JOIN article_has_hashtag 
+				ON article_has_hashtag.id_hash = hashtag.id_hash 
+			INNER JOIN article 
+				ON article_has_hashtag.id_article = article.id_article 
+			WHERE article.titre LIKE "%'.$keyword.'%" OR article.contenu LIKE "%'.$keyword.'%" ';
+	$response = $bdd->query($req);
+	return $response;
+}
+
+function selectAllHashtagsArticleByHashtag($hashtag, $bdd) {
+	$req = 'SELECT DISTINCT hashtag.id_hash, hashtag.nom from hashtag 
+			INNER JOIN article_has_hashtag 
+				ON article_has_hashtag.id_hash = hashtag.id_hash
+			INNER JOIN article 
+				ON article_has_hashtag.id_article = article.id_article 
+			WHERE article_has_hashtag.id_article IN (
+				SELECT article.id_article FROM article
+						INNER JOIN article_has_hashtag 
+							ON article_has_hashtag.id_article = article.id_article 
+						INNER JOIN hashtag
+					        ON article_has_hashtag.id_hash = hashtag.id_hash 
+						WHERE hashtag.nom = '.$hashtag.'
+				)';
 	$response = $bdd->query($req);
 	return $response;
 }

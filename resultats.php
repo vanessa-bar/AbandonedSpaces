@@ -10,22 +10,84 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
 	</head>
 
 	<body>
 		<?php
 			include("include/resultatsHeader.php");
-			include("include/menu.php");
 		?>
 
+		<nav>
+			<button class="mobile-nav">Menu</button>
+			<div class="clearfix"></div>
+			<div class="hidden">
+				<ul class="navbar">
+					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+							<span class="nav-subtitle">- vestiges -</span></a>
+					</li>
+					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+						<span class="nav-subtitle">- urbains -</span></a>
+					</li>
+					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+						<span class="nav-subtitle">- lieux reculés -</span></a>
+					</li>
+					<li class="search-hide"><a href="carte.php">Carte</a></li>
+					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li class="search-link">
+						<form method="POST" action="resultats.php">
+							<input type="text" name="keyword" value="">
+							<input type="submit" class="submit-search-btn" value="">
+						</form>
+					</li>
+				</ul>
+			</div>
+			<img src="img/menuLine.png" style="position:absolute;bottom:0;">
+		</nav>
+
 		<div class="container">
-			<h1>Résultats de recherche pour : <?php echo $_POST["keyword"]; ?></h1>
+			<h1>Résultats de recherche</h1>
+			<?php 
+				if (!empty($_POST["hashtag"])) {
+					$search = 1;
+				}
+				if (!empty($_POST["keyword"])) {
+					$search = 2;
+				}
+				if (!(empty($_POST["hashtag"]) && empty($_POST["keyword"]))) {	
+
+					if ($search == 1)
+						echo "<p>Pour le hashtag : ".$_POST['hashtag'];
+					if ($search == 2)
+						echo "<p>Pour le mot clé : ".$_POST['keyword'];
+
+			?>
+
+			<div class="all-hashtags button-group filter-button-group">
+				<?php
+					//if ($search == "byhashtag") 
+
+					if ($search == 2)
+						$reponse = selectAllHashtagsArticleByKeyword($_POST["keyword"], $bdd);
+
+					while ($donnees = $reponse->fetch()) {
+						echo "<button data-filter='.".$donnees['nom']."' class='hashtag'>#".$donnees['nom']."</button>";
+					}
+				?>
+			</div>
 
 			<div class="grid">
 			  <div class="grid-sizer"></div>
 			  		<?php
-						$reponse = selectArticleByKeyword($_POST["keyword"], $bdd);
+			  			$hasResult = false;
+			  			if ($search == 1) 
+			  				$response = selectArticleByHashtag($_POST["hashtag"], $bdd);
+						if ($search == 2)
+							$reponse = selectArticleByKeyword($_POST["keyword"], $bdd);
+
 						while ($donnees = $reponse->fetch()) {
+							$hasResult = true;
 							
 					?>
 
@@ -70,8 +132,17 @@
 					<?php
 						}
 						$reponse->closeCursor();
+						if (!$hasResult) {
+							echo '<p>Aucun résultat.</p>';
+						}
 					?>
 			</div>
+
+			<?php
+				} else {
+					echo '<p>Aucun résultat.</p>';
+				}
+			?>
 		</div>
 
 		<div class="clearfix"></div>
