@@ -74,6 +74,14 @@ button {
 	border: none;
 }
 
+.mobile-hide {
+	display: initial;
+}
+
+.mobile-show {
+	display: none;
+}
+
 .submit-search-btn {
 	background: url("../img/search_ideogram.png");
 	background-size: cover;
@@ -123,7 +131,7 @@ nav {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -131,7 +139,7 @@ nav li {
 	font-family: "OratorSTD";
 	text-align: center;
 	font-size: 16px;
-	flex: 1;
+	flex: auto;
 }
 
 .navbar .active a {
@@ -173,6 +181,13 @@ nav li {
 	background-repeat: no-repeat;
 	height: 350px;
 	position: relative;
+}
+
+.social-icon {
+	display: inline-block;
+	height: 40px;
+	width: auto;
+	cursor: pointer;
 }
 
 .imgHeader {
@@ -355,10 +370,15 @@ nav li {
 	width: 100%;
 }
 
+
+.social-icons {
+	float: right;
+}
+
 .difficulty-icon {
-	height: 40px;
+	height: 35px;
 	width: auto;
-	padding: 0 7px;
+	padding: 0 5px;
 }
 
 .article-title {
@@ -581,11 +601,23 @@ input[type="button"] {
 	.article-item-container {
 		width: 90%;
 	}
+
+	.navbar {
+		width: 99%;
+	}
 }
 
 @media screen and (max-width: 640px) {
 	.natureHeader {
 		height: 200px;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	.mobile-show {
+		display: initial;
 	}
 
 	.mobile-nav {
@@ -602,7 +634,7 @@ input[type="button"] {
 	}
 
 	.container {
-		width: 100%;
+		width: 95%;
 		margin: auto;
 	}
 

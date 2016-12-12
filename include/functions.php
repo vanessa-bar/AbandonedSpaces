@@ -40,7 +40,7 @@ function selectArticleByKeyword($keyword, $bdd) {
 }
 
 function selectAllHashtagsArticleByKeyword($keyword, $bdd) {
-	$req = 'SELECT * FROM hashtag 
+	$req = 'SELECT DISTINCT hashtag.id_hash, hashtag.nom FROM hashtag 
 			INNER JOIN article_has_hashtag 
 				ON article_has_hashtag.id_hash = hashtag.id_hash 
 			INNER JOIN article 
