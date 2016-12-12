@@ -48,7 +48,7 @@ a {
 
 .imgArticle {
 	width: 60%;
-	padding: 20px 0;
+	padding: 30px 0;
 	height: auto;
 }
 
@@ -72,6 +72,14 @@ img {
 button {
 	background: none;
 	border: none;
+}
+
+.mobile-hide {
+	display: initial;
+}
+
+.mobile-show {
+	display: none;
 }
 
 .submit-search-btn {
@@ -123,7 +131,7 @@ nav {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -131,7 +139,7 @@ nav li {
 	font-family: "OratorSTD";
 	text-align: center;
 	font-size: 16px;
-	flex: 1;
+	flex: auto;
 }
 
 .navbar .active a {
@@ -173,6 +181,13 @@ nav li {
 	background-repeat: no-repeat;
 	height: 350px;
 	position: relative;
+}
+
+.social-icon {
+	display: inline-block;
+	height: 40px;
+	width: auto;
+	cursor: pointer;
 }
 
 .imgHeader {
@@ -355,10 +370,15 @@ nav li {
 	width: 100%;
 }
 
+
+.social-icons {
+	float: right;
+}
+
 .difficulty-icon {
-	height: 40px;
+	height: 35px;
 	width: auto;
-	padding: 0 7px;
+	padding: 0 5px;
 }
 
 .article-title {
@@ -375,9 +395,18 @@ nav li {
 	font-family: "OratorSTD";
 }
 
+input[type="button"] {
+	border:none;
+}
+
 .article-info {
 	text-align: right;
 	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.img-soulign {
+	width: auto;
 }
 
 .article-img {
@@ -449,15 +478,107 @@ nav li {
 	padding: 0 5px;
 }
 
-.search-form {
-	display: flex;
-	width: 100%;
-	flex-direction:row;
-	justify-content: space-between;
+.search-form-div {
+	text-align: left;
 }
 
 .search-form-item {
 	flex:1;
+}
+
+
+
+.control-group {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	margin-right: 50px;
+}
+
+.control {
+	font-size: 16px;
+	position: relative;
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	background: #e6e6e6;
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: #ccc;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: #229b74;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: #229b74;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: #e6e6e6;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 2px;
+	left: 6px;
+	width: 3px;
+	height: 8px;
+	transform: rotate(45deg);
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+
+.control-group p {
+	font-weight: 700;
+	padding: 5px 0;
+	font-size: 18px;
 }
 
 @media (max-width: 1280px) {
@@ -480,11 +601,23 @@ nav li {
 	.article-item-container {
 		width: 90%;
 	}
+
+	.navbar {
+		width: 99%;
+	}
 }
 
 @media screen and (max-width: 640px) {
 	.natureHeader {
 		height: 200px;
+	}
+
+	.mobile-hide {
+		display: none;
+	}
+
+	.mobile-show {
+		display: initial;
 	}
 
 	.mobile-nav {
@@ -501,7 +634,7 @@ nav li {
 	}
 
 	.container {
-		width: 100%;
+		width: 95%;
 		margin: auto;
 	}
 

@@ -19,22 +19,22 @@
 		?>
 
 		<nav>
-			<button class="mobile-nav">Menu</button>
+			<button class="mobile-nav" style="cursor: pointer;"><img style="height:45px; width: auto; margin-right: 5px;" src="img/hamburger-menu.png" alt="Menu"></button>
 			<div class="clearfix"></div>
 			<div class="hidden">
 				<ul class="navbar">
-					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
-					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+					<li><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li><a href="ruines.php">Passé Suspendu</br>
 							<span class="nav-subtitle">- vestiges -</span></a>
 					</li>
-					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+					<li><a href="urbain.php">Quotidien Figé</br>
 						<span class="nav-subtitle">- urbains -</span></a>
 					</li>
-					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+					<li class="active"><a href="nature.php">Nature Immuable</br>
 						<span class="nav-subtitle">- lieux reculés -</span></a>
 					</li>
-					<li class="search-hide"><a href="carte.php">Carte</a></li>
-					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li><a href="carte.php">Carte</a></li>
+					<li><a href="a_propos.php">A Propos</a></li>
 					<li class="search-link">
 						<form method="POST" action="resultats.php">
 							<input type="text" name="keyword" value="">
@@ -47,7 +47,8 @@
 		</nav>
 
 		<div class="container">
-			<h1>Tous les articles</h1>
+			<h1>Tous les articles<br/>
+				<img class="img-soulign" src="img/soulignement.png"></h1>
 
 
 			<div class="all-hashtags button-group filter-button-group">

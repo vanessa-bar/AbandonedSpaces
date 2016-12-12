@@ -1,4 +1,10 @@
 <?php
+
+	if (empty($_GET["article-id"]) || empty($_GET["theme"]))
+		header('Location: index.html');
+	if ($_GET["article-id"] > 13)
+		header('Location: index.html');
+
 	include('include/init.php');
 	include('include/functions.php');	
 ?>
@@ -25,32 +31,47 @@
 		?>
 
 		<nav>
-			<button class="mobile-nav">Menu</button>
-			<div class="clearfix"></div>
-			<div class="hidden">
-				<ul class="navbar">
-					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
-					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
-							<span class="nav-subtitle">- vestiges -</span></a>
-					</li>
-					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
-						<span class="nav-subtitle">- urbains -</span></a>
-					</li>
-					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
-						<span class="nav-subtitle">- lieux reculés -</span></a>
-					</li>
-					<li class="search-hide"><a href="carte.php">Carte</a></li>
-					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
-					<li class="search-link">
-						<form method="POST" action="resultats.php">
-							<input type="text" name="keyword" value="">
-							<input type="submit" class="submit-search-btn" value="">
-						</form>
-					</li>
-				</ul>
-			</div>
-			<img src="img/menuLine.png" style="position:absolute;bottom:0;">
-		</nav>
+	      <button class="mobile-nav">Menu</button>
+	      <div class="clearfix"></div>
+	      <div class="hidden">
+	        <ul class="navbar">
+	          <li><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+	          <li
+	          	<?php 
+	          		if ($_GET['theme'] == 1)
+	          			echo ' class="active"';
+	          	?>
+	          ><a href="ruines.php">Passé Suspendu</br>
+	              <span class="nav-subtitle">- vestiges -</span></a>
+	          </li>
+	          <li
+	          	<?php
+	          		if ($_GET['theme'] == 3)
+	          			echo ' class="active"';
+	          	?>
+	          ><a href="urbain.php">Quotidien Figé</br>
+	            <span class="nav-subtitle">- urbains -</span></a>
+	          </li>
+	          <li
+	          	<?php
+	          		if ($_GET['theme'] == 2)
+	          			echo ' class="active"';
+	          	?>
+	          ><a href="nature.php">Nature Immuable</br>
+	            <span class="nav-subtitle">- lieux reculés -</span></a>
+	          </li>
+	          <li><a href="carte.php">Carte</a></li>
+	          <li><a href="a_propos.php">A Propos</a></li>
+	          <li class="search-link">
+	            <form method="POST" action="resultats.php">
+	              <input type="text" name="keyword" value="">
+	              <input type="submit" class="submit-search-btn" value="">
+	            </form>
+	          </li>
+	        </ul>
+	      </div>
+	      <img src="img/menuLine.png" style="position:absolute;bottom:0;">
+	    </nav>
 
 		<div class="container">
 			<?php
@@ -61,11 +82,11 @@
 				<div class="article-container">
 			<?php
 				if ($_GET['theme'] == 1) {
-					echo '<a href="ruines.php">Retour</a>';
+					echo '<a href="ruines.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				} else if ($_GET['theme'] == 2) {
-					echo '<a href="nature.php">Retour</a>';
+					echo '<a href="nature.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				} else {
-					echo '<a href="urbain.php">Retour</a>';
+					echo '<a href="urbain.php"><img class="nav-icon" src="img/arrow-left.png" alt="Retour"></a>';
 				}
 			?>
 
@@ -93,6 +114,17 @@
 							echo '<img class="difficulty-icon" src="img/RISQUE_URBAIN_GRIS.png" alt="diff">';
 						}
 					}
+					
+				?>
+
+					<span class="social-icons">
+						<img src="img/facebook-icon.png" alt="" class="social-icon"/>
+						<img src="img/insta-icon.png" alt="" class="social-icon"/>
+						<img src="img/twitter-icon.png" alt="" class="social-icon"/>
+					</span>
+
+
+				<?php
 					echo '</p>';
 					echo '<img class="article-img" src='.$donnees['image'].' alt="article-img" />';
 					echo '<p class="article-info">Par '.$donnees['auteur'].', le ';
@@ -122,7 +154,9 @@
 					</div>
 			</div>
 
-			<h1>Articles similaires</h1>
+			<h1>Articles similaires<br/>
+			<img class="img-soulign" src="img/soulignement.png"></h1>
+			
 
 			<?php
 				if ($_GET['article-id'] == 1) {

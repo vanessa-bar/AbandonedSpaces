@@ -23,18 +23,18 @@
 			<div class="clearfix"></div>
 			<div class="hidden">
 				<ul class="navbar">
-					<li class="search-hide"><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
-					<li class="search-hide"><a href="ruines.php">Passé Suspendu</br>
+					<li><a href="index.html"><img class="nav-menuIcon" src="img/menuIcon.png" alt="Accueil"/></a></li>
+					<li><a href="ruines.php">Passé Suspendu</br>
 							<span class="nav-subtitle">- vestiges -</span></a>
 					</li>
-					<li class="search-hide"><a href="urbain.php">Quotidien Figé</br>
+					<li><a href="urbain.php">Quotidien Figé</br>
 						<span class="nav-subtitle">- urbains -</span></a>
 					</li>
-					<li class="search-hide"><a href="nature.php">Nature Immuable</br>
+					<li><a href="nature.php">Nature Immuable</br>
 						<span class="nav-subtitle">- lieux reculés -</span></a>
 					</li>
-					<li class="search-hide"><a href="carte.php">Carte</a></li>
-					<li class="search-hide"><a href="a_propos.php">A Propos</a></li>
+					<li><a href="carte.php">Carte</a></li>
+					<li class="active"><a href="a_propos.php">A Propos</a></li>
 					<li class="search-link">
 						<form method="POST" action="resultats.php">
 							<input type="text" name="keyword" value="">
@@ -48,26 +48,9 @@
 
 		<div class="container">
 			<div class="about-container">
-				<h1>Le concept</h1>
 
-				<p class="about-content">
-					Un site sur le voyage ? Encore un ? <br/>
-					Oui ! Mais cette fois un site différent !<br/>
-					Oh oui, tous les sites sont différents... Mais le nôtre l’est plus !<br/>
-
-					<br/>
-					Avez-vous déjà secrètement rêvé, sans oser réellement y penser, de voyager dans l’inconnu ? De découvrir des nouveaux espaces, inexplorés ? Des lieux où se mélangent la nature et les constructions humaines ? Ou simplement la nature. Sans trace humaine ! Pour une fois, être seul… Se mesurer à l’existence, une réflexion sur l’Homme et la nature, sur nous-même et pourquoi pas, sur la société elle-même et son superflu. <br/>
-
-					<br/>
-					Oui ? C’est bien pourquoi vous êtes sur cette page ! Nous aussi !<br/>
-					Vous pourrez donc explorer différentes catégories de lieux et de possibles voyages et fonction du type de voyage qui vous attire le plus :<br/> 
-						<span class="indented-line">- le passé et son lien avec le présent</span><br/>
-						<span class="indented-line">- la nature et son lien avec le temps</span><br/>
-						<span class="indented-line">- la nature et elle-même, seule et unique</span><br/>
-					Ces catégories sont poreuses et nous vous incitons et fortement à explorer chacune d’elles !<br/>
-				</p>
-
-				<h1>Qui sommes-nous ?</h1>
+				<h1>Qui sommes-nous ?<br/>
+				<img class="img-soulign" src="img/soulignement.png"></h1>
 				
 				<div class="about-content">
 					<div class="row">
@@ -83,9 +66,9 @@
 							tour du monde avec elle.</p>
 
 							<div style="text-align: center">	
-								<span class="hashtag">#rencontres</span> 
-								<span class="hashtag">#souvenirs</span>
-								<span class="hashtag">#photos</span>
+								<span style="cursor:default" class="hashtag">#rencontres</span> 
+								<span style="cursor:default" class="hashtag">#souvenirs</span>
+								<span style="cursor:default" class="hashtag">#photos</span>
 							</div>
 						</div>
 					</div>
@@ -103,9 +86,9 @@
 							</p>
 
 							<div style="text-align: center">	
-								<span class="hashtag">#rencontres</span> 
-								<span class="hashtag">#sacàdos</span> 
-								<span class="hashtag">#toutseul</span>
+								<span style="cursor:default" class="hashtag">#rencontres</span> 
+								<span style="cursor:default" class="hashtag">#sacàdos</span> 
+								<span style="cursor:default" class="hashtag">#toutseul</span>
 							</div>
 						</div>
 						<div class="flex-1 img-container">
@@ -129,23 +112,47 @@
 							</p>
 
 							<div style="text-align: center">	
-								<span class="hashtag">#sacàdos</span> 
-								<span class="hashtag">#jeparsàlaventure</span>  
-								<span class="hashtag">#toutseul</span>
+								<span style="cursor:default" class="hashtag">#sacàdos</span> 
+								<span style="cursor:default" class="hashtag">#jeparsàlaventure</span>  
+								<span style="cursor:default" class="hashtag">#toutseul</span>
 							</div>
 						</div>
 						
 					</div>
 				</div>
+
+				<h1>Le concept<br/>
+				<img class="img-soulign" src="img/soulignement.png"></h1>
+
+				<p class="about-content">
+					Un site sur le voyage ? Encore un ? <br/>
+					Oui ! Mais cette fois un site différent !<br/>
+					Oh oui, tous les sites sont différents... Mais le nôtre l’est plus !<br/>
+
+					<br/>
+					Avez-vous déjà secrètement rêvé, sans oser réellement y penser, de voyager dans l’inconnu ? De découvrir des nouveaux espaces, inexplorés ? Des lieux où se mélangent la nature et les constructions humaines ? Ou simplement la nature. Sans trace humaine ! Pour une fois, être seul… Se mesurer à l’existence, une réflexion sur l’Homme et la nature, sur nous-même et pourquoi pas, sur la société elle-même et son superflu. <br/>
+
+					<br/>
+					Oui ? C’est bien pourquoi vous êtes sur cette page ! Nous aussi !<br/>
+					Vous pourrez donc explorer différentes catégories de lieux et de possibles voyages et fonction du type de voyage qui vous attire le plus :<br/> 
+						<span class="indented-line">- le passé et son lien avec le présent</span><br/>
+						<span class="indented-line">- la nature et son lien avec le temps</span><br/>
+						<span class="indented-line">- la nature et elle-même, seule et unique</span><br/>
+					Ces catégories sont poreuses et nous vous incitons et fortement à explorer chacune d’elles !<br/>
+				</p>
 			</div>
+
+
 		</div>
 
 		<div class="clearfix"></div>
-		<div class="footer">
-			<p>Plan du Site - Mentions Légales
-			<br/>
-			IMAC2 - 2016</p>
-		</div>
+	    <div class="footer">
+	      <img src="img/footer_about.png"><div class="footer-infos">
+	        <p>Plan du Site - Mentions Légales
+	        <br/>
+	        IMAC2 - 2016</p>
+	      </div>
+	    </div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
