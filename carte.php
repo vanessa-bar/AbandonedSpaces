@@ -168,6 +168,8 @@
         m9.setMap(null);
         m10.setMap(null);
         m11.setMap(null);
+        m12.setMap(null);
+        m13.setMap(null);
 
         if (nocontinent) {
           if (notype) {
@@ -182,6 +184,8 @@
             m9.setMap(map);
             m10.setMap(map);
             m11.setMap(map);
+            m12.setMap(map);
+            m13.setMap(map);
             // 5. Ajouter marqueur à carte
           } else {
             // 6. Ajouter le marqueur en fonction du theme
@@ -195,6 +199,8 @@
               m3.setMap(map);
               m7.setMap(map);
               m11.setMap(map);
+              m12.setMap(map);
+              m13.setMap(map);
             }
             if (type3) {
               m2.setMap(map);
@@ -210,6 +216,7 @@
               m5.setMap(map);
               m7.setMap(map);
               m11.setMap(map);
+              m13.setMap(map);
             } else {
               if (type1) {
                 m5.setMap(map);
@@ -217,6 +224,8 @@
               if (type2) {
                 m7.setMap(map);
                 m11.setMap(map);
+                m13.setMap(map);
+
               }
               if (type3) {
 
@@ -297,12 +306,13 @@
 
           if (continent6) { // Océanie
             if (notype) {
-              
+              m12.setMap(map);
             } else {
               if (type1) {
                 
               }
               if (type2) {
+                m13.setMap(map);
 
               }
               if (type3) {
@@ -315,7 +325,7 @@
 
      var map;
      // 1- Déclarer le marqueur
-     var m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11;
+     var m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13;
      var prev_infowindow = false; 
      
      function initialize() {
@@ -586,6 +596,45 @@
         infowindow11.open(map, m11);
       });
 
+    contentString = "<a href='article.php?article-id=12&theme=2'>L’archipel d’Auckland : sept îles à la biodiversité hors du commun</a>";
+      var infowindow12 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m12 = new google.maps.Marker({
+        position: new google.maps.LatLng(-50.7034, 165.8370),
+        icon: image
+      });
+
+      m12.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow12;
+        infowindow12.open(map, m12);
+      });
+
+    contentString = "<a href='article.php?article-id=13&theme=2'>Plaine salée en Bolivie, cap sur sur le désert d’Uyuni</a>";
+      var infowindow13 = new google.maps.InfoWindow({
+        content: contentString
+      });      
+
+      m13 = new google.maps.Marker({
+        position: new google.maps.LatLng(-19.8108, -66.4220),
+        icon: image
+      });
+
+      m13.addListener('click', function() {
+        if( prev_infowindow ) {
+           prev_infowindow.close();
+        }
+
+        prev_infowindow = infowindow13;
+        infowindow13.open(map, m13);
+      });
+
+
       /// 2. Remplir le template
       /*contentString = "<a href='article.php?article-id=5&theme=1'>Du Cruzco au Machu Picchu : une traversée Inca</a>";
       var infowindow5 = new google.maps.InfoWindow({
@@ -617,6 +666,8 @@
       m9.setMap(map);
       m10.setMap(map);
       m11.setMap(map);
+      m12.setMap(map);
+      m13.setMap(map);
       // 3. Ajouter le marqueur à la map
     }
     </script>

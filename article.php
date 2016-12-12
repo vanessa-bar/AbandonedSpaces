@@ -130,20 +130,20 @@
 				<div class="grid">
 					<div class="grid-sizer"></div>
 					<div class="article-item grid-item">
-						<img class="article-item-img" src="img/Um_El_Ma.jpg" alt="img_article">
+						<img class="article-item-img" src="img/Grand_Zimbabwe.jpg" alt="img_article">
 
 						<div class="article-item-description">
-							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
-							<p class="article-item-title">Mère de l’eau au Sahara, l’histoire simple d’un lac en Libye</p>
+							<p class="article-item-info">Par Elise le 12 Oct. 2016</p>
+							<p class="article-item-title">Le Grand Zimbabwe et ses pierres, reflet d’un empire déchu</p>
 							<p class="article-item-hashtag">
 								
 							</p>
 
 							<form method="GET" action="article.php"> 
-								<button class="article-item-link" name="article-id" value="3" type="submit">
+								<button class="article-item-link" name="article-id" value="9" type="submit">
 									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
 								</button>
-								<input type="hidden" name="theme" value="2">
+								<input type="hidden" name="theme" value="1">
 							</form>
 						</div>
 					</div>
@@ -172,23 +172,42 @@
 				<div class="grid">
 					<div class="grid-sizer"></div>
 					<div class="article-item grid-item">
-						<img class="article-item-img" src="img/Nara_Dreamland.jpg" alt="img_article">
+						<img class="article-item-img" src="img/Hashima.jpg" alt="img_article">
 
 						<div class="article-item-description">
-							<p class="article-item-info">Par Test le 30 Nov. 2016</p>
-							<p class="article-item-title">Nara Dreamland, exploration des rêves abandonnés</p>
+							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
+							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
 							<p class="article-item-hashtag">
 								
 							</p>
 
 							<form method="GET" action="article.php"> 
-								<button class="article-item-link" name="article-id" value="4" type="submit">
+								<button class="article-item-link" name="article-id" value="8" type="submit">
 									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
 								</button>
 								<input type="hidden" name="theme" value="3">
 							</form>
 						</div>
 					</div>
+					
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Pripyat.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="10" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+
 				</div>
 			<?php
 				} else if ($_GET['article-id'] == 3) {
@@ -213,6 +232,23 @@
 							</form>
 						</div>
 					</div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Salar_Uyuni.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 11 Déc. 2016</p>
+							<p class="article-item-title">Plaine salée en Bolivie, cap sur sur le désert d’Uyuni</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="13" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
 				</div>
 			<?php
 				} else if ($_GET['article-id'] == 4) {
@@ -220,23 +256,42 @@
 				<div class="grid">
 					<div class="grid-sizer"></div>
 					<div class="article-item grid-item">
-						<img class="article-item-img" src="img/Pyramiden.jpg" alt="img_article">
+						<img class="article-item-img" src="img/Hashima.jpg" alt="img_article">
 
 						<div class="article-item-description">
-							<p class="article-item-info">Par Elise le 19 Nov. 2016</p>
-							<p class="article-item-title">Pyramiden, au delà du cercle polaire, ville russe en Norvège</p>
+							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
+							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
 							<p class="article-item-hashtag">
 								
 							</p>
 
 							<form method="GET" action="article.php"> 
-								<button class="article-item-link" name="article-id" value="2" type="submit">
+								<button class="article-item-link" name="article-id" value="8" type="submit">
 									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
 								</button>
 								<input type="hidden" name="theme" value="3">
 							</form>
 						</div>
 					</div>
+					
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Pripyat.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="10" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+
 				</div>
 			<?php
 				} else if ($_GET['article-id'] == 5) {
@@ -261,13 +316,385 @@
 							</form>
 						</div>
 					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Vinicunca.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="11" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			<?php
+			
+				} else if ($_GET['article-id'] == 6) {
+			?>	
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Machu_Picchu.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
+							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="5" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="1">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Grand_Zimbabwe.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Le Grand Zimbabwe et ses pierres, reflet d’un empire déchu</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="9" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="1">
+							</form>
+						</div>
+					</div>
+				</div>
+			
+			<?php
+				} else if ($_GET['article-id'] == 7) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Auckland_Islands.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
+							<p class="article-item-title">L’archipel d’Auckland : sept îles à la biodiversité hors du commun</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="12" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Vinicunca.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="11" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			<?php
+				} else if ($_GET['article-id'] == 8) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="iimg/Nara_Dreamland.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
+							<p class="article-item-title">Nara Dreamland, exploration des rêves abandonnés</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="4" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+					
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Pripyat.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="10" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+
+				</div>
+			
+			<?php
+				} else if ($_GET['article-id'] == 9) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Lion_de_Babylone.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
+							<p class="article-item-title">Là où les passés s’entremêlent et le présent s’en mèle, Babylone</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="1" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="1">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Machu_Picchu.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
+							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="5" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="1">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			<?php
+				} else if ($_GET['article-id'] == 10) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Hashima.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
+							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="8" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+					
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="iimg/Pyramiden.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 19 Nov. 2016</p>
+							<p class="article-item-title">Pyramiden, au delà du cercle polaire, ville russe en Norvège</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="2" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="3">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			<?php
+				} else if ($_GET['article-id'] == 11) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Auckland_Islands.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
+							<p class="article-item-title">L’archipel d’Auckland : sept îles à la biodiversité hors du commun</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="12" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Terre_de_Feu.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
+							<p class="article-item-title">Terre de Feu et bout du monde : la Patagonie intacte</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="7" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
 				</div>
 			<?php
+				} else if ($_GET['article-id'] == 12) {
+			?>
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Vinicunca.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
+							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="11" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Terre_de_Feu.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
+							<p class="article-item-title">Terre de Feu et bout du monde : la Patagonie intacte</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="7" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+
+				</div>
+
+			<?php
+			
+				} else if ($_GET['article-id'] == 13) {
+			?>	
+				<div class="grid">
+					<div class="grid-sizer"></div>
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Machu_Picchu.jpg" alt="img_article">
+
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
+							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
+							<p class="article-item-hashtag">
+								
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="5" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="1">
+							</form>
+						</div>
+					</div>
+
+					<div class="article-item grid-item">
+						<img class="article-item-img" src="img/Grand_Zimbabwe.jpg" alt="img_article">
+						<div class="article-item-description">
+							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
+							<p class="article-item-title">Mère de l’eau au Sahara, l’histoire simple d’un lac en Libye</p>
+							<p class="article-item-hashtag">
+									
+							</p>
+
+							<form method="GET" action="article.php"> 
+								<button class="article-item-link" name="article-id" value="3" type="submit">
+									<img class="article-item-btn" src="img/article-btn.png" alt="Lire plus">
+								</button>
+								<input type="hidden" name="theme" value="2">
+							</form>
+						</div>
+					</div>
+				</div>
+			
+			<?php
+
 				} else {
 					echo "Aucun article similaire.";
 				}
-
 			?>
+	
 		</div>
 
 		<div class="clearfix"></div>
