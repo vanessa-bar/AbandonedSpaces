@@ -6,10 +6,10 @@
 	$passwd = "uAqyu8ao4s";*/
 
 	$host = "localhost";
-	$dbname = "web_design";
+	$dbname = "vbar_db";
 	$charset = "UTF8";
 	$username = "root";
-	$passwd = "";
+	$passwd = "root";
 
 	try {
 		// Adresse de la base, nom de la base, charset utilisateur, mdp
