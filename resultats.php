@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Nature Immuable</title>
+		<title>Article</title>
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/style.css"/>
@@ -91,7 +91,7 @@
 							$hasResult = true;
 							
 					?>
-
+						<a href=<?php echo '"article.php?article-id='.$donnees['id_article'].'&theme='.$donnees['theme'].'"'; ?>>
 						<div class=
 							<?php
 								echo '"grid-item article-item';
@@ -138,12 +138,12 @@
 						}
 					?>
 			</div>
-
-			<?php
-				} else {
-					echo '<p>Aucun résultat.</p>';
-				}
-			?>
+					<?php
+						}
+						$reponse->closeCursor();
+					?>
+			</div>
+		</a>
 		</div>
 
 		<div class="clearfix"></div>

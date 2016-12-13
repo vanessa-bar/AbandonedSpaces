@@ -34,7 +34,7 @@
 	          <li><a href="nature.php">Nature Immuable</br>
 	            <span class="nav-subtitle">- lieux reculés -</span></a>
 	          </li>
-	          <li class="active"><a href="carte.php">Carte</a></li>
+	          <li><a href="carte.php">Carte</a></li>
 	          <li><a href="a_propos.php">A Propos</a></li>
 	          <li class="search-link">
 	            <form method="POST" action="resultats.php">

@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Nature Immuable</title>
+		<title>Article</title>
 		<meta charset="UTF-8"/>	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/style.css"/>
@@ -118,9 +118,9 @@
 				?>
 
 					<span class="social-icons">
-						<img src="img/facebook-icon.png" alt="" class="social-icon"/>
-						<img src="img/insta-icon.png" alt="" class="social-icon"/>
-						<img src="img/twitter-icon.png" alt="" class="social-icon"/>
+						<p class="facebook"><img src="img/facebook-icon.png" alt="" class="social-icon"/></p>
+						<p class="insta"><img src="img/insta-icon.png" alt="" class="social-icon"/></p>
+						<p class="twitter"><img src="img/twitter-icon.png" alt="" class="social-icon"/></p>
 					</span>
 
 
@@ -170,7 +170,7 @@
 							<p class="article-item-info">Par Elise le 12 Oct. 2016</p>
 							<p class="article-item-title">Le Grand Zimbabwe et ses pierres, reflet d’un empire déchu</p>
 							<p class="article-item-hashtag">
-								
+								#citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -188,7 +188,7 @@
 							<p class="article-item-info">Par Test le 30 Nov. 2016</p>
 							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
 							<p class="article-item-hashtag">
-									
+								#incas #montagne #citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -212,7 +212,7 @@
 							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
 							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
 							<p class="article-item-hashtag">
-								
+								#villefantôme #île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -230,7 +230,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
 							<p class="article-item-hashtag">
-									
+								#unionsoviétique #villefantôme
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -255,7 +255,7 @@
 							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
 							<p class="article-item-title">Là où les passés s’entremêlent et le présent s’en mèle, Babylone</p>
 							<p class="article-item-hashtag">
-								
+								#citéantique #moyenorient
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -272,7 +272,7 @@
 							<p class="article-item-info">Par Elise le 11 Déc. 2016</p>
 							<p class="article-item-title">Plaine salée en Bolivie, cap sur sur le désert d’Uyuni</p>
 							<p class="article-item-hashtag">
-									
+								#montagne
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -296,7 +296,7 @@
 							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
 							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
 							<p class="article-item-hashtag">
-								
+								#villefantôme #île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -314,7 +314,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
 							<p class="article-item-hashtag">
-									
+								#unionsoviétique #villefantôme
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -339,7 +339,7 @@
 							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
 							<p class="article-item-title">Là où les passés s’entremêlent et le présent s’en mèle, Babylone</p>
 							<p class="article-item-hashtag">
-								
+								#unionsoviétique #villefantôme
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -357,7 +357,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
 							<p class="article-item-hashtag">
-									
+								#montagne
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -384,7 +384,7 @@
 							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
 							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
 							<p class="article-item-hashtag">
-								
+								#incas #montagne #citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -402,7 +402,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Le Grand Zimbabwe et ses pierres, reflet d’un empire déchu</p>
 							<p class="article-item-hashtag">
-									
+								#citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -427,7 +427,7 @@
 							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
 							<p class="article-item-title">L’archipel d’Auckland : sept îles à la biodiversité hors du commun</p>
 							<p class="article-item-hashtag">
-								
+								#moyenorient
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -445,7 +445,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
 							<p class="article-item-hashtag">
-									
+								#citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -465,13 +465,13 @@
 				<div class="grid">
 					<div class="grid-sizer"></div>
 					<div class="article-item grid-item">
-						<img class="article-item-img" src="iimg/Nara_Dreamland.jpg" alt="img_article">
+						<img class="article-item-img" src="img/Nara_Dreamland.jpg" alt="img_article">
 
 						<div class="article-item-description">
 							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
 							<p class="article-item-title">Nara Dreamland, exploration des rêves abandonnés</p>
 							<p class="article-item-hashtag">
-								
+								#parcdattraction
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -489,7 +489,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Tchernobyl, explosion et nucléaire : le lendemain à Pripyat</p>
 							<p class="article-item-hashtag">
-									
+								#unionsoviétique #villefantôme
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -515,7 +515,7 @@
 							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
 							<p class="article-item-title">Là où les passés s’entremêlent et le présent s’en mèle, Babylone</p>
 							<p class="article-item-hashtag">
-								
+								#citéantique #moyenorient
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -533,7 +533,7 @@
 							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
 							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
 							<p class="article-item-hashtag">
-									
+								#incas #montagne #citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -559,7 +559,7 @@
 							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
 							<p class="article-item-title">Ambiance apocalyptique à Hashima</p>
 							<p class="article-item-hashtag">
-								
+								#villefantôme #île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -572,12 +572,12 @@
 					</div>
 					
 					<div class="article-item grid-item">
-						<img class="article-item-img" src="iimg/Pyramiden.jpg" alt="img_article">
+						<img class="article-item-img" src="img/Pyramiden.jpg" alt="img_article">
 						<div class="article-item-description">
 							<p class="article-item-info">Par Elise le 19 Nov. 2016</p>
 							<p class="article-item-title">Pyramiden, au delà du cercle polaire, ville russe en Norvège</p>
 							<p class="article-item-hashtag">
-									
+								#unionsoviétique #villefantôme
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -603,7 +603,7 @@
 							<p class="article-item-info">Par Elise le 10 Nov. 2016</p>
 							<p class="article-item-title">L’archipel d’Auckland : sept îles à la biodiversité hors du commun</p>
 							<p class="article-item-hashtag">
-								
+								#île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -621,7 +621,7 @@
 							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
 							<p class="article-item-title">Terre de Feu et bout du monde : la Patagonie intacte</p>
 							<p class="article-item-hashtag">
-									
+								#île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -646,7 +646,7 @@
 							<p class="article-item-info">Par Elise le 10 Déc. 2016</p>
 							<p class="article-item-title">Entre lamas et couleurs, à la découverte des Rainbow Mountains</p>
 							<p class="article-item-hashtag">
-								
+								#montagne
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -664,7 +664,7 @@
 							<p class="article-item-info">Par Elise le 4 Déc. 2016</p>
 							<p class="article-item-title">Terre de Feu et bout du monde : la Patagonie intacte</p>
 							<p class="article-item-hashtag">
-									
+								#île
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -691,7 +691,7 @@
 							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
 							<p class="article-item-title">Du Cruzco au Machu Picchu : une traversée Inca</p>
 							<p class="article-item-hashtag">
-								
+								#incas #montagne #citéantique
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -709,7 +709,7 @@
 							<p class="article-item-info">Par Elise le 30 Nov. 2016</p>
 							<p class="article-item-title">Mère de l’eau au Sahara, l’histoire simple d’un lac en Libye</p>
 							<p class="article-item-hashtag">
-									
+								#désert
 							</p>
 
 							<form method="GET" action="article.php"> 
@@ -757,19 +757,48 @@
 			$(".hidden").toggle();
 		});
 
-		/* Animation du bouton "Lire plus" des articles */
-		$(".article-item-link")
+		/* Animation du bouton Facebook */
+		$(".facebook")
 		.mouseenter(function() {
 			btn = $(this).find($("img"));
 			btn.fadeOut(300, function() {
-				btn.attr("src","img/article-btn-hover.png");
+				btn.attr("src","img/facebook-icon-hover.png");
 				btn.fadeIn(300);
 			});
 		})
 		.mouseleave(function() {
 			btn = $(this).find($("img"));
-			btn.attr('src', "img/article-btn.png");
+			btn.attr('src', "img/facebook-icon.png");
 		});
+
+		/* Animation du bouton Insta */
+		$(".insta")
+		.mouseenter(function() {
+			btn = $(this).find($("img"));
+			btn.fadeOut(300, function() {
+				btn.attr("src","img/insta-icon-hover.png");
+				btn.fadeIn(300);
+			});
+		})
+		.mouseleave(function() {
+			btn = $(this).find($("img"));
+			btn.attr('src', "img/insta-icon.png");
+		});
+
+		/* Animation du bouton Twitter */
+		$(".twitter")
+		.mouseenter(function() {
+			btn = $(this).find($("img"));
+			btn.fadeOut(300, function() {
+				btn.attr("src","img/twitter-icon-hover.png");
+				btn.fadeIn(300);
+			});
+		})
+		.mouseleave(function() {
+			btn = $(this).find($("img"));
+			btn.attr('src', "img/twitter-icon.png");
+		});
+
 
 		var grid = $('.grid').isotope({
 		  itemSelector: '.grid-item',
@@ -817,8 +846,12 @@
 		    	coords = [51.4045, 30.0542];
 		    } else if (id == 11) {
 		    	coords = [-13.7985, -71.2924];
+		    } else if (id == 12) {
+		    	coords = [-50.7034, 165.8370];
+		    } else if (id == 13) {
+		    	coords = [-19.8108, -66.4220];
 		    } else {
-		    	//TO NOTHING
+		    	//DO NOTHING
 		    }
 	    // Creation de la map
 	    var center = new google.maps.LatLng(coords[0], coords[1]);
