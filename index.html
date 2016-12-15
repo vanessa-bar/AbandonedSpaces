@@ -4,7 +4,6 @@
 		<title>Test</title>
 		<meta charset="utf8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/style.css" />
 		<link rel="icon" type="image/png" href="img/favicon.png" />
 		<style>
 		@font-face {
@@ -18,7 +17,7 @@
 		}
 
 		#container {
-			/*width: 1124px;*/
+			width: 1124px;
 			margin: 50px auto;
 			position:relative;
 		}
@@ -90,6 +89,53 @@
 		.futureClip:hover{-webkit-clip-path:url(#futurePathHover);clip-path:url(#futurePathHover);}
 		.aboutClip{-webkit-clip-path:url(#aboutPath);clip-path:url(#aboutPath);}
 		.mapClip{-webkit-clip-path:url(#mapPath);clip-path:url(#mapPath);}
+
+		.mobile-show{display: none;}
+		.mobile-hide{display:initial;}
+
+		/*@media screen and (max-width: 1150px) {
+			.mobile-hide{display: none;}
+			.mobile-show{display: initial;}
+		}*/
+
+		@media screen and (max-width: 640px) {
+			.mobile-hide{display: none;}
+			.mobile-show{display: initial;}
+			#container {margin:0;padding:0;width:auto;}
+			.menu-item img {
+				height: 100%;
+			}
+
+			.clipTitle {
+				position: initial;
+				padding: 5px;
+			}
+
+			.menu-item {
+				text-decoration: none;
+				height: 30vh;
+				display:block;
+			}
+			.menu-item-little {
+				height:calc(10vh-10px);
+			}
+			.menu-quotidien {
+				background: url(img/parc_accueil_m.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+			.menu-nature {
+				background: url(img/chara_accueil_m.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+
+			.menu-passe {
+				background: url(img/castle_accueil_m.jpg);
+				background-position: center;
+				background-size: cover;
+			}
+		}
 		</style>
 	</head>
 
@@ -147,16 +193,14 @@
 						<img src="img/mapImg.png" alt="">
 					</a>
 				</div>
-			</div>
 
 			<!-- NE PAS MODIFIER LES CLIP PATHS (PITIÉ !) -->
 			<!-- Pour "Quotidien figé" - 459*432-->
 			<svg width="0" height="0">
 				<defs>
-				<clipPath id="todayPath" clipPathUnits="objectBoundingBox">
-			   <!--<polygon points="243 0,27 216,27 378,432 432,405 270,459 243,459 216">-->
-			   <!--<polygon points="50% 0%, 8% 50%, 8% 85%, 85% 100%, 80% 60%, 100% 55%">-->
-			   		<polygon points="0.5 0, 0.08 .5, 0.08 0.85, 0.85 1, 0.8 0.6, 1 0.55"/>
+				<clipPath id="todayPath">
+				   <polygon points="243 0,27 216,27 378,432 432,405 270,459 243,459 216">
+				    </polygon>
 			  	</clipPath>
 			  </defs>
 			</svg>
@@ -221,8 +265,55 @@
 			</svg>
 		</div>
 
+
 		<div class="mobile-show">
-			Menu sur mobile
+			<a href="urbain.php" class="menu-item menu-quotidien">
+				<div>
+					<p class="clipTitle">
+						<span class="clipBigTitle">Quotidien Figé</span>
+					</br>
+					<span class="clipSmallTitle">- Urbain -</span>
+					</p>
+				</div>
+			</a>
+
+			<a href="nature.php" class="menu-item menu-nature">
+				<div>
+					<p class="clipTitle">
+						<span class="clipBigTitle">Nature Immuable</span>
+					</br>
+					<span class="clipSmallTitle">- Lieux réculés -</span>
+					</p>
+				</div>
+			</a>
+
+			<a href="ruines.php" class="menu-item menu-passe">
+				<div>
+					<p class="clipTitle">
+						<span class="clipBigTitle">Passé Suspendu</span>
+					</br>
+					<span class="clipSmallTitle">- Vestiges -</span>
+					</p>
+				</div>
+			</a>
+
+			<div class="menu-item-little">
+				<div class="">
+					<a href="a_propos.php">
+						<p class="clipTitle withoutBackground">
+							<span class="black clipSmallTitle">A propos</span>
+						</p>
+					</a>
+				</div>
+				<div>
+					<a href="carte.php">
+						<p class="clipTitle withoutBackground">
+							<span class="black clipSmallTitle">Carte</span>
+						</p>
+					</a>
+				</div>
+			</div>
+			</div>
 		</div>
 	</body>
 </html>
